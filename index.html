@@ -789,6 +789,11 @@ header {
     <div class="sep"></div>
     <div class="sidebar-label">Opciones</div>
     <button class="btn btn-ghost btn-sm" onclick="addCategory()">+ Nueva categoría</button>
+    <button class="btn btn-ghost btn-sm" onclick="exportData()">⬆ Exportar datos</button>
+    <label class="btn btn-ghost btn-sm" style="cursor:pointer">
+      ⬇ Importar datos
+      <input type="file" accept=".json" style="display:none" onchange="importData(event)">
+    </label>
   </div>
 
   <!-- CONTENT -->
@@ -1702,6 +1707,52 @@ function renderCompare() {
   `).join('');
 }
 
+// ── EXPORT / IMPORT DATA ──────────────────────────────────────────────────
+function exportData() {
+  const json = JSON.stringify(state, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'cartola_datos_' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('✓ Datos exportados');
+}
+
+function importData(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const imported = JSON.parse(ev.target.result);
+      if (!imported.months) { toast('Archivo inválido'); return; }
+      // Merge — imported months take priority
+      state.months = { ...state.months, ...imported.months };
+      if (imported.monthOrder) {
+        // merge order: imported first, then any existing not in imported
+        const merged = [...(imported.monthOrder || [])];
+        for (const k of (state.monthOrder || [])) if (!merged.includes(k)) merged.push(k);
+        state.monthOrder = merged.filter(k => state.months[k]);
+      }
+      if (!state.activeMonth || !state.months[state.activeMonth]) {
+        const order = getMonthOrder();
+        state.activeMonth = order.length ? order[order.length - 1] : null;
+      }
+      saveState();
+      renderSidebar();
+      renderClassify();
+      renderCompare();
+      toast(`✓ ${Object.keys(imported.months).length} meses importados`);
+    } catch(err) {
+      toast('Error leyendo el archivo JSON');
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+}
+
 // ── EXCEL EXPORT ──────────────────────────────────────────────────────────
 function exportExcel() {
   const m = state.months[state.activeMonth];
@@ -1772,7 +1823,7 @@ function toast(msg) {
 
 // ── PASSWORD ──────────────────────────────────────────────────────────────
 // Cambia esta contraseña por la que quieras usar
-const APP_PASSWORD = 'Monis2311';
+const APP_PASSWORD = 'totalmetal2026';
 const SESSION_KEY  = 'cartola_auth';
 
 function checkPassword() {
