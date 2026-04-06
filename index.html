@@ -950,7 +950,11 @@ let state = { months: {}, activeMonth: null, monthOrder: [] };
 function loadState() {
   try {
     const s = localStorage.getItem(STORAGE_KEY);
-    if (s) state = JSON.parse(s);
+    if (s) {
+      state = JSON.parse(s);
+      // Normalize all months to new format
+      for (const m of Object.values(state.months || {})) normalizeMonth(m);
+    }
   } catch(e) {}
 }
 function saveState() {
@@ -1284,15 +1288,27 @@ function deleteMonth(e, key) {
 // ── CAT DATA HELPERS ──────────────────────────────────────────────────────
 // Normalize: old format was array, new format is {txs:[], subgroups:{}}
 function getCatTxs(catData) {
+  if (!catData) return [];
   if (Array.isArray(catData)) return catData;
   return catData.txs || [];
 }
 function getCatSubgroups(catData) {
-  if (Array.isArray(catData)) return {};
+  if (!catData || Array.isArray(catData)) return {};
   return catData.subgroups || {};
 }
 function catTotal(catData) {
   return getCatTxs(catData).reduce((s, t) => s + t.monto, 0);
+}
+// Upgrade old array-format categories to new object format
+function normalizeMonth(m) {
+  if (!m || !m.categories) return;
+  for (const [cat, catData] of Object.entries(m.categories)) {
+    if (Array.isArray(catData)) {
+      m.categories[cat] = { txs: catData, subgroups: {} };
+    } else if (!catData.subgroups) {
+      catData.subgroups = {};
+    }
+  }
 }
 
 // ── CLASSIFY ──────────────────────────────────────────────────────────────
@@ -1874,7 +1890,7 @@ function renderCompare() {
   const lastKey = keys[keys.length - 1];
   const prevKey = keys[keys.length - 2];
 
-  // header
+  try {
   let html = `<thead><tr><th>Categoría</th>`;
   keys.forEach((k, i) => {
     html += `<th class="num" style="color:${monthColor(i)}">${k}</th>`;
@@ -1939,6 +1955,10 @@ function renderCompare() {
   }
   html += `</tr></tfoot>`;
   table.innerHTML = html;
+  } catch(err) {
+    console.error('renderCompare error:', err);
+    table.innerHTML = `<tr><td colspan="10" style="color:var(--red);padding:12px">Error renderizando tabla: ${err.message}</td></tr>`;
+  }
 
   // Bar chart: suma acumulada de todos los meses con subgrupos, sorted desc
   const catTotals = cats.map(c => {
@@ -2026,6 +2046,8 @@ function importData(e) {
     try {
       const imported = JSON.parse(ev.target.result);
       if (!imported.months) { toast('Archivo inválido'); return; }
+      // Normalize imported months to new format
+      for (const m of Object.values(imported.months)) normalizeMonth(m);
       // Merge — imported months take priority
       state.months = { ...state.months, ...imported.months };
       if (imported.monthOrder) {
