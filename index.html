@@ -852,7 +852,7 @@ header {
           <table class="comp-table" id="compTable"></table>
         </div>
         <div class="chart-wrap">
-          <div class="chart-title">Gasto por categoría · todos los meses</div>
+          <div class="chart-title">Gasto acumulado por categoría · todos los meses</div>
           <div class="bar-chart" id="barChart"></div>
         </div>
       </div>
@@ -1686,25 +1686,30 @@ function renderCompare() {
   html += `</tr></tfoot>`;
   table.innerHTML = html;
 
-  // Bar chart: last month only, sorted desc
-  const lastMonth = state.months[lastKey];
+  // Bar chart: suma acumulada de todos los meses, sorted desc
   const catTotals = cats.map(c => ({
     cat: c,
-    total: (lastMonth.categories[c] || []).reduce((s, t) => s + t.monto, 0)
+    total: keys.reduce((sum, k) => {
+      const txs = state.months[k].categories[c] || [];
+      return sum + txs.reduce((s, t) => s + t.monto, 0);
+    }, 0)
   })).filter(x => x.total > 0).sort((a, b) => b.total - a.total);
 
+  const grandAccum = catTotals.reduce((s, x) => s + x.total, 0);
   const maxVal = catTotals[0]?.total || 1;
   const barColors = catTotals.map((_, i) => COLORS[i % COLORS.length]);
 
-  document.getElementById('barChart').innerHTML = catTotals.map((x, i) => `
+  document.getElementById('barChart').innerHTML = catTotals.map((x, i) => {
+    const pct = grandAccum > 0 ? (x.total / grandAccum * 100).toFixed(1) + '%' : '';
+    return `
     <div class="bar-row">
       <div class="bar-label" title="${escHtml(x.cat)}">${escHtml(x.cat)}</div>
       <div class="bar-track">
         <div class="bar-fill" style="width:${(x.total/maxVal*100).toFixed(1)}%;background:${barColors[i]}22;border-left:3px solid ${barColors[i]}"></div>
       </div>
-      <div class="bar-val" style="color:${barColors[i]}">${fmtCLP(x.total)}</div>
-    </div>
-  `).join('');
+      <div class="bar-val" style="color:${barColors[i]}">${fmtCLP(x.total)} <span style="font-size:10px;color:var(--text3)">${pct}</span></div>
+    </div>`;
+  }).join('');
 }
 
 // ── EXPORT / IMPORT DATA ──────────────────────────────────────────────────
