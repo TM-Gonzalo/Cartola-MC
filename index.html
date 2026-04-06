@@ -1682,7 +1682,6 @@ function renderCompare() {
   table.innerHTML = html;
 
   // Bar chart: last month only, sorted desc
-  const lastKey = keys[keys.length - 1];
   const lastMonth = state.months[lastKey];
   const catTotals = cats.map(c => ({
     cat: c,
