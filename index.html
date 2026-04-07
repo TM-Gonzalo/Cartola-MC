@@ -853,6 +853,7 @@ header {
     <div class="sep"></div>
     <div class="sidebar-label">Opciones</div>
     <button class="btn btn-ghost btn-sm" onclick="addCategory()">+ Nueva categoría</button>
+    <button class="btn btn-ghost btn-sm" onclick="dedupMonth()">🧹 Limpiar duplicados</button>
     <button class="btn btn-ghost btn-sm" onclick="exportData()">⬆ Exportar datos</button>
     <label class="btn btn-ghost btn-sm" style="cursor:pointer">
       ⬇ Importar datos
@@ -1395,14 +1396,20 @@ function renderClassify() {
             <span class="subcat-total">${fmtCLP(sgTotal)}</span>
           </div>
           <div class="subcat-rows">
-            ${sgSorted.map((tx, i) => renderTxRow(cat, tx, sorted.indexOf(tx), true)).join('')}
+            ${sgSorted.map((tx) => {
+              const idx = sorted.indexOf(tx);
+              return renderTxRow(cat, tx, idx, true);
+            }).join('')}
           </div>
         </div>`;
     }
 
-    // Render unclassified txs (no subgroup)
+    // Render unclassified txs using their actual index in sorted array
     if (unclassified.length > 0) {
-      subcatHTML += unclassified.map((tx, i) => renderTxRow(cat, tx, sorted.indexOf(tx), false)).join('');
+      subcatHTML += unclassified.map((tx) => {
+        const idx = sorted.indexOf(tx);
+        return renderTxRow(cat, tx, idx, false);
+      }).join('');
     }
 
     return `
@@ -2102,6 +2109,40 @@ function toggleCompSg(toggleId) {
       if (span) span.textContent = isOpen ? '▶' : '▼';
     }
   });
+}
+
+// ── DEDUP ─────────────────────────────────────────────────────────────────
+function dedupMonth() {
+  const m = state.months[state.activeMonth];
+  if (!m) { toast('Selecciona una cartola primero'); return; }
+  let removed = 0;
+  for (const [cat, catData] of Object.entries(m.categories)) {
+    const txs = getCatTxs(catData);
+    const seen = new Set();
+    const deduped = [];
+    for (const tx of txs) {
+      // Use fecha+descripcion+monto as unique key
+      const key = `${tx.fecha}|${tx.descripcion}|${tx.monto}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        deduped.push(tx);
+      } else {
+        removed++;
+        // Also remove from subgroups
+        const sgs = getCatSubgroups(catData);
+        for (const sg of Object.values(sgs)) {
+          const i = sg.indexOf(tx);
+          if (i !== -1) sg.splice(i, 1);
+        }
+      }
+    }
+    if (Array.isArray(catData)) m.categories[cat] = { txs: deduped, subgroups: {} };
+    else catData.txs = deduped;
+  }
+  saveState();
+  renderClassify();
+  renderSidebar();
+  toast(removed > 0 ? `✓ ${removed} duplicado${removed > 1 ? 's' : ''} eliminado${removed > 1 ? 's' : ''}` : 'Sin duplicados encontrados');
 }
 
 // ── EXPORT / IMPORT DATA ──────────────────────────────────────────────────
