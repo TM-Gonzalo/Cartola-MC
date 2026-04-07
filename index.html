@@ -1703,19 +1703,47 @@ function clearSelection() {
 function openBulkMoveModal() {
   if (!selection.length) return;
   const m = state.months[state.activeMonth];
-  // Use first selected tx as reference for modal title
-  const firstCat = selection[0].cat;
   document.getElementById('moveTxDesc').textContent =
     `${selection.length} movimiento${selection.length > 1 ? 's' : ''} seleccionado${selection.length > 1 ? 's' : ''}`;
-  const allCats = Object.keys(m.categories);
   const opts = document.getElementById('catOptions');
-  opts.innerHTML = allCats
+
+  // Collect all subgroups across all categories involved in selection
+  const involvedCats = [...new Set(selection.map(s => s.cat))];
+  let sgHtml = '';
+  for (const cat of involvedCats) {
+    const sgNames = Object.keys(getCatSubgroups(m.categories[cat]));
+    if (sgNames.length > 0) {
+      sgHtml += `<div style="font-size:11px;color:var(--text3);padding:4px 0 2px">Subgrupos de ${escHtml(cat)}</div>`;
+      sgHtml += sgNames.map(sg => `<div class="cat-option" onclick="bulkMoveToSubgroup('${escJs(cat)}','${escJs(sg)}')">
+        <span>↳</span> ${escHtml(sg)}
+      </div>`).join('');
+      sgHtml += `<div class="cat-option" onclick="bulkMoveToSubgroup('${escJs(cat)}',null)"><span>✕</span> Sin subgrupo (quitar de subgrupo)</div>`;
+    }
+  }
+  if (sgHtml) sgHtml += `<div style="font-size:11px;color:var(--text3);padding:6px 0 2px">Otra categoría</div>`;
+
+  opts.innerHTML = sgHtml + Object.keys(m.categories)
     .map(c => `<div class="cat-option" onclick="bulkMoveTx('${escJs(c)}')">
       <span>📁</span> ${escHtml(c)}
     </div>`).join('')
     + `<div class="cat-option" onclick="bulkMoveTxNew()"><span>✚</span> Nueva categoría…</div>`;
-  movePending = null; // clear single-move pending
+  movePending = null;
   document.getElementById('moveModal').classList.add('open');
+}
+
+function bulkMoveToSubgroup(targetCat, sgName) {
+  const m = state.months[state.activeMonth];
+  // Only move selections that belong to targetCat
+  const forThisCat = selection.filter(s => s.cat === targetCat);
+  for (const { cat, idx } of forThisCat) {
+    moveToSubgroup(cat, idx, sgName);
+  }
+  // Remaining selections (different cat) — ignore or move to targetCat
+  selection = [];
+  closeModal();
+  updateBulkBar();
+  renderClassify();
+  renderSidebar();
 }
 
 function bulkMoveTx(targetCat) {
@@ -1802,12 +1830,17 @@ function openMoveModal(cat, idx) {
   const opts = document.getElementById('catOptions');
   // Show subgroup options within same category + other categories
   const sgNames = Object.keys(getCatSubgroups(m.categories[cat]));
-  let sgHtml = sgNames.length ? `<div style="font-size:11px;color:var(--text3);padding:4px 0 2px">Subgrupos de ${escHtml(cat)}</div>` : '';
-  sgHtml += sgNames.map(sg => `<div class="cat-option" onclick="moveTxToSubgroup('${escJs(cat)}',${idx},'${escJs(sg)}')">
-    <span>↳</span> ${escHtml(sg)}
-  </div>`).join('');
-  if (sgNames.length) sgHtml += `<div class="cat-option" onclick="moveTxToSubgroup('${escJs(cat)}',${idx},null)"><span>✕</span> Sin subgrupo</div>`;
-  sgHtml += `<div style="font-size:11px;color:var(--text3);padding:6px 0 2px">Otra categoría</div>`;
+  let sgHtml = '';
+  if (sgNames.length > 0) {
+    sgHtml = `<div style="font-size:11px;color:var(--text3);padding:4px 0 2px">Clasificar en subgrupo de ${escHtml(cat)}</div>`;
+    sgHtml += sgNames.map(sg => `<div class="cat-option" onclick="moveTxToSubgroup('${escJs(cat)}',${idx},'${escJs(sg)}')">
+      <span>↳</span> ${escHtml(sg)}
+    </div>`).join('');
+    sgHtml += `<div class="cat-option" onclick="moveTxToSubgroup('${escJs(cat)}',${idx},null)">
+      <span>✕</span> Quitar del subgrupo
+    </div>`;
+    sgHtml += `<div style="font-size:11px;color:var(--text3);padding:6px 0 2px">Mover a otra categoría</div>`;
+  }
   opts.innerHTML = sgHtml + Object.keys(m.categories)
     .filter(c => c !== cat)
     .map(c => `<div class="cat-option" onclick="moveTx('${escJs(c)}')">
@@ -1993,10 +2026,13 @@ function renderCompare() {
   document.getElementById('barChart').innerHTML = catTotals.map((x, i) => {
     const pct = grandAccum > 0 ? (x.total / grandAccum * 100).toFixed(1) + '%' : '';
     const color = barColors[i];
-    let sgRows = '';
     const sgEntries = Object.entries(x.sgTotals).filter(([, v]) => v > 0).sort((a, b) => b[1] - a[1]);
-    if (sgEntries.length > 0) {
-      sgRows = sgEntries.map(([sg, sgVal]) => {
+    const hasSg = sgEntries.length > 0;
+    const barId = `bar-sg-${slugify(x.cat)}`;
+
+    let sgRows = '';
+    if (hasSg) {
+      sgRows = `<div id="${barId}" style="display:none">` + sgEntries.map(([sg, sgVal]) => {
         const sgPct = x.total > 0 ? (sgVal / x.total * 100).toFixed(0) + '%' : '';
         return `
         <div class="bar-row" style="margin-left:12px;margin-bottom:2px">
@@ -2006,17 +2042,30 @@ function renderCompare() {
           </div>
           <div class="bar-val" style="color:var(--text2);font-size:11px">${fmtCLP(sgVal)} <span style="font-size:10px;color:var(--text3)">${sgPct}</span></div>
         </div>`;
-      }).join('');
+      }).join('') + `</div>`;
     }
+
     return `
-    <div class="bar-row">
-      <div class="bar-label" title="${escHtml(x.cat)}">${escHtml(x.cat)}</div>
+    <div class="bar-row" style="cursor:${hasSg ? 'pointer' : 'default'}" onclick="${hasSg ? `toggleBarSg('${barId}',this)` : ''}">
+      <div class="bar-label" title="${escHtml(x.cat)}" style="display:flex;align-items:center;gap:4px">
+        ${hasSg ? `<span style="font-size:9px;color:var(--text3)" id="${barId}-chevron">▶</span>` : ''}
+        ${escHtml(x.cat)}
+      </div>
       <div class="bar-track">
         <div class="bar-fill" style="width:${(x.total/maxVal*100).toFixed(1)}%;background:${color}22;border-left:3px solid ${color}"></div>
       </div>
       <div class="bar-val" style="color:${color}">${fmtCLP(x.total)} <span style="font-size:10px;color:var(--text3)">${pct}</span></div>
     </div>${sgRows}`;
   }).join('');
+}
+
+function toggleBarSg(barId, row) {
+  const el = document.getElementById(barId);
+  if (!el) return;
+  const isOpen = el.style.display !== 'none';
+  el.style.display = isOpen ? 'none' : '';
+  const chevron = document.getElementById(barId + '-chevron');
+  if (chevron) chevron.textContent = isOpen ? '▶' : '▼';
 }
 
 function toggleCompSg(toggleId) {
