@@ -1368,18 +1368,17 @@ function renderClassify() {
     const pct = grandTotal > 0 && total > 0 ? (total / grandTotal * 100).toFixed(1) + '%' : '';
     const hasSubgroups = Object.keys(subgroups).length > 0;
 
-    // Build unclassified txs (not in any subgroup)
-    const classifiedIdxs = new Set(Object.values(subgroups).flat().map(t => sorted.findIndex(s => s === t)).filter(i => i >= 0));
-    // Actually track by reference using a Set
-    const classifiedTxSet = new Set();
-    for (const sgTxs of Object.values(subgroups)) for (const t of sgTxs) classifiedTxSet.add(t);
-    const unclassified = sorted.filter(t => !classifiedTxSet.has(t));
-
+    // Build subcat HTML — subgroups are views, all txs remain in sorted
     let subcatHTML = '';
 
-    // Render subgroups
+    // Render subgroups first (visual grouping only)
     for (const [sgName, sgTxs] of Object.entries(subgroups)) {
-      const sgSorted = [...sgTxs].sort((a, b) => parseFecha(a.fecha) - parseFecha(b.fecha));
+      // Filter sgTxs to only those that exist in sorted (by key match)
+      const sgValid = sgTxs.filter(t => sorted.some(s =>
+        s.fecha === t.fecha && s.descripcion === t.descripcion && s.monto === t.monto
+      ));
+      if (!sgValid.length) continue;
+      const sgSorted = [...sgValid].sort((a, b) => parseFecha(a.fecha) - parseFecha(b.fecha));
       subgroups[sgName] = sgSorted;
       const sgTotal = sgSorted.reduce((s, t) => s + t.monto, 0);
       const sgPct = total !== 0 ? (sgTotal / Math.abs(total) * 100).toFixed(0) + '%' : '';
@@ -1397,20 +1396,17 @@ function renderClassify() {
           </div>
           <div class="subcat-rows">
             ${sgSorted.map((tx) => {
-              const idx = sorted.indexOf(tx);
+              const idx = sorted.findIndex(s =>
+                s.fecha === tx.fecha && s.descripcion === tx.descripcion && s.monto === tx.monto
+              );
               return renderTxRow(cat, tx, idx, true);
             }).join('')}
           </div>
         </div>`;
     }
 
-    // Render unclassified txs using their actual index in sorted array
-    if (unclassified.length > 0) {
-      subcatHTML += unclassified.map((tx) => {
-        const idx = sorted.indexOf(tx);
-        return renderTxRow(cat, tx, idx, false);
-      }).join('');
-    }
+    // Render ALL txs below subgroups (complete list)
+    subcatHTML += sorted.map((tx, idx) => renderTxRow(cat, tx, idx, false)).join('');
 
     return `
     <div class="cat-block" id="cat-${slugify(cat)}">
@@ -1501,12 +1497,15 @@ function moveToSubgroup(cat, txIdx, sgName) {
   }
   const tx = catData.txs[txIdx];
   if (!tx) return;
-  // remove from any existing subgroup
-  for (const sg of Object.values(catData.subgroups)) {
-    const i = sg.indexOf(tx);
-    if (i !== -1) sg.splice(i, 1);
+  // Remove this tx from ALL subgroups first (by key match)
+  const key = `${tx.fecha}|${tx.descripcion}|${tx.monto}`;
+  for (const sgTxs of Object.values(catData.subgroups)) {
+    for (let i = sgTxs.length - 1; i >= 0; i--) {
+      const k = `${sgTxs[i].fecha}|${sgTxs[i].descripcion}|${sgTxs[i].monto}`;
+      if (k === key) sgTxs.splice(i, 1);
+    }
   }
-  // add to target subgroup
+  // Add to target subgroup (store the tx object from txs array)
   if (sgName && catData.subgroups[sgName]) {
     catData.subgroups[sgName].push(tx);
   }
@@ -2116,61 +2115,29 @@ function dedupMonth() {
   const m = state.months[state.activeMonth];
   if (!m) { toast('Selecciona una cartola primero'); return; }
   let removed = 0;
-
   for (const [cat, catData] of Object.entries(m.categories)) {
     if (Array.isArray(catData)) {
       m.categories[cat] = { txs: catData, subgroups: {} };
       continue;
     }
     const txs = catData.txs || [];
-    const sgs = catData.subgroups || {};
-
-    // Collect all tx references that are in subgroups
-    const inSubgroup = new Set();
-    for (const sgTxs of Object.values(sgs)) {
-      for (const tx of sgTxs) inSubgroup.add(tx);
-    }
-
-    // Step 1: remove from txs any tx whose key matches a subgroup tx
-    // (these are duplicates created when moving from top-level category)
-    const sgKeys = new Set();
-    for (const tx of inSubgroup) {
-      sgKeys.add(`${tx.fecha}|${tx.descripcion}|${tx.monto}`);
-    }
-
+    const seen = new Set();
     const deduped = [];
     for (const tx of txs) {
       const key = `${tx.fecha}|${tx.descripcion}|${tx.monto}`;
-      if (inSubgroup.has(tx)) {
-        // This IS the subgroup tx — keep it
-        deduped.push(tx);
-      } else if (sgKeys.has(key)) {
-        // This is a duplicate of a subgroup tx — remove it
-        removed++;
-      } else {
-        deduped.push(tx);
+      if (!seen.has(key)) { seen.add(key); deduped.push(tx); }
+      else removed++;
+    }
+    catData.txs = deduped;
+    // Clean subgroups too — remove any tx whose key no longer exists in txs
+    const validKeys = new Set(deduped.map(t => `${t.fecha}|${t.descripcion}|${t.monto}`));
+    for (const sgTxs of Object.values(catData.subgroups || {})) {
+      for (let i = sgTxs.length - 1; i >= 0; i--) {
+        const k = `${sgTxs[i].fecha}|${sgTxs[i].descripcion}|${sgTxs[i].monto}`;
+        if (!validKeys.has(k)) sgTxs.splice(i, 1);
       }
     }
-
-    // Step 2: also remove exact duplicate txs (same key, not in subgroup)
-    const seen = new Set();
-    const finalDeduped = [];
-    for (const tx of deduped) {
-      const key = `${tx.fecha}|${tx.descripcion}|${tx.monto}`;
-      if (!seen.has(key)) {
-        seen.add(key);
-        finalDeduped.push(tx);
-      } else if (inSubgroup.has(tx)) {
-        // Keep subgroup tx even if "duplicate"
-        finalDeduped.push(tx);
-      } else {
-        removed++;
-      }
-    }
-
-    catData.txs = finalDeduped;
   }
-
   saveState();
   renderClassify();
   renderSidebar();
@@ -2311,7 +2278,7 @@ function toast(msg) {
 
 // ── PASSWORD ──────────────────────────────────────────────────────────────
 // Cambia esta contraseña por la que quieras usar
-const APP_PASSWORD = 'Monis2311';
+const APP_PASSWORD = 'totalmetal2026';
 const SESSION_KEY  = 'cartola_auth';
 
 function checkPassword() {
