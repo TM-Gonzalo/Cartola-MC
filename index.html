@@ -1474,9 +1474,35 @@ function toggleSubcat(id) {
 function addSubgroup(cat) {
   const name = prompt('Nombre del subgrupo:');
   if (!name || !name.trim()) return;
+  const m = state.months[state.activeMonth];
+  if (!m) return;
+  const catData = m.categories[cat];
+  if (!catData.sgNames) catData.sgNames = [];
+  if (!catData.sgNames.includes(name.trim())) catData.sgNames.push(name.trim());
   saveState();
   renderClassify();
-  toast(`Subgrupo "${name}" creado — asigna movimientos con el botón ⇄`);
+  toast(`Subgrupo "${name.trim()}" creado — asigna movimientos con el botón ⇄`);
+}
+
+// Get all subgroup names for a category (created + used in txs)
+function getSubgroupNames(cat) {
+  const m = state.months[state.activeMonth];
+  if (!m) return [];
+  const catData = m.categories[cat];
+  const txs = getCatTxs(catData);
+  const fromTxs = [...new Set(txs.map(t => t.subgrupo).filter(Boolean))];
+  const fromNames = catData?.sgNames || [];
+  return [...new Set([...fromNames, ...fromTxs])];
+}
+
+// Same but for any month/cat combo
+function getSubgroupNamesFor(months, key, cat) {
+  if (!months[key]?.categories[cat]) return [];
+  const catData = months[key].categories[cat];
+  const txs = getCatTxs(catData);
+  const fromTxs = [...new Set(txs.map(t => t.subgrupo).filter(Boolean))];
+  const fromNames = catData?.sgNames || [];
+  return [...new Set([...fromNames, ...fromTxs])];
 }
 
 function renameSubgroup(cat, oldName, newName) {
@@ -1484,10 +1510,16 @@ function renameSubgroup(cat, oldName, newName) {
   if (!newName || newName === oldName) return;
   const m = state.months[state.activeMonth];
   if (!m) return;
-  // Update tx.subgrupo field for all txs in this category
-  const txs = getCatTxs(m.categories[cat]);
+  const catData = m.categories[cat];
+  const txs = getCatTxs(catData);
   for (const tx of txs) {
     if (tx.subgrupo === oldName) tx.subgrupo = newName;
+  }
+  // Update sgNames
+  if (catData.sgNames) {
+    const i = catData.sgNames.indexOf(oldName);
+    if (i !== -1) catData.sgNames[i] = newName;
+    else if (!catData.sgNames.includes(newName)) catData.sgNames.push(newName);
   }
   saveState();
   renderClassify();
@@ -1709,7 +1741,7 @@ function openBulkMoveModal() {
   let sgHtml = '';
   for (const cat of involvedCats) {
     const txs = getCatTxs(m.categories[cat]);
-    const sgNames = [...new Set(txs.map(t => t.subgrupo).filter(Boolean))];
+    const sgNames = getSubgroupNames(cat);
     if (sgNames.length > 0) {
       sgHtml += `<div style="font-size:11px;color:var(--text3);padding:4px 0 2px">Subgrupos de ${escHtml(cat)}</div>`;
       sgHtml += sgNames.map(sg => `<div class="cat-option" onclick="bulkMoveToSubgroup('${escJs(cat)}','${escJs(sg)}')"><span>↳</span> ${escHtml(sg)}</div>`).join('');
@@ -1827,7 +1859,7 @@ function openMoveModal(cat, idx) {
 
   // Get all existing subgroup names in this category
   const txs = getCatTxs(m.categories[cat]);
-  const sgNames = [...new Set(txs.map(t => t.subgrupo).filter(Boolean))];
+  const sgNames = getSubgroupNames(cat);
 
   let sgHtml = '';
   if (sgNames.length > 0) {
@@ -1916,16 +1948,15 @@ function renderCompare() {
   for (const k of keys) for (const c of Object.keys(state.months[k].categories)) allCats.add(c);
   const cats = [...allCats].sort();
 
-  // Collect all subgroup names per category using tx.subgrupo
-  const allSubgroups = {}; // cat -> Set of sgNames
+  // Collect all subgroup names per category using tx.subgrupo + sgNames
+  const allSubgroups = {};
   for (const k of keys) {
     for (const [cat, catData] of Object.entries(state.months[k].categories)) {
       const txs = getCatTxs(catData);
-      for (const tx of txs) {
-        if (tx.subgrupo) {
-          if (!allSubgroups[cat]) allSubgroups[cat] = new Set();
-          allSubgroups[cat].add(tx.subgrupo);
-        }
+      const names = [...new Set([...(catData.sgNames || []), ...txs.map(t => t.subgrupo).filter(Boolean)])];
+      if (names.length > 0) {
+        if (!allSubgroups[cat]) allSubgroups[cat] = new Set();
+        for (const sg of names) allSubgroups[cat].add(sg);
       }
     }
   }
