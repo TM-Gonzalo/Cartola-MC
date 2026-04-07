@@ -1287,7 +1287,6 @@ function deleteMonth(e, key) {
 }
 
 // ── CAT DATA HELPERS ──────────────────────────────────────────────────────
-// Normalize: old format was array, new format is {txs:[], subgroups:{}}
 function getCatTxs(catData) {
   if (!catData) return [];
   if (Array.isArray(catData)) return catData;
@@ -1308,16 +1307,36 @@ function safeGetCatSubgroups(months, key, cat) {
   if (!months[key] || !months[key].categories) return {};
   return getCatSubgroups(months[key].categories[cat]);
 }
-// Upgrade old array-format categories to new object format
+// Normalize to new format and migrate subgroups to tx.subgrupo field
 function normalizeMonth(m) {
   if (!m || !m.categories) return;
   for (const [cat, catData] of Object.entries(m.categories)) {
     if (Array.isArray(catData)) {
       m.categories[cat] = { txs: catData, subgroups: {} };
-    } else if (!catData.subgroups) {
+    } else {
+      if (!catData.subgroups) catData.subgroups = {};
+      // Migrate old subgroups array refs to tx.subgrupo field
+      for (const [sgName, sgTxs] of Object.entries(catData.subgroups)) {
+        for (const sgTx of sgTxs) {
+          // Find matching tx in txs by key
+          const txs = catData.txs || [];
+          const match = txs.find(t =>
+            t.fecha === sgTx.fecha && t.descripcion === sgTx.descripcion && t.monto === sgTx.monto
+          );
+          if (match && !match.subgrupo) match.subgrupo = sgName;
+        }
+      }
+      // Clear old subgroups arrays — now using tx.subgrupo
       catData.subgroups = {};
     }
   }
+}
+
+// Get unique subgroup names for a category (from tx.subgrupo field)
+function getCatSubgroupNames(catData) {
+  const txs = getCatTxs(catData);
+  const names = new Set(txs.map(t => t.subgrupo).filter(Boolean));
+  return [...names];
 }
 
 // ── CLASSIFY ──────────────────────────────────────────────────────────────
@@ -1358,7 +1377,6 @@ function renderClassify() {
   container.innerHTML = catList.map(cat => {
     const catData = cats[cat];
     const allTxs = getCatTxs(catData);
-    const subgroups = getCatSubgroups(catData);
     const sorted = [...allTxs].sort((a, b) => parseFecha(a.fecha) - parseFecha(b.fecha));
     if (Array.isArray(catData)) m.categories[cat] = { txs: sorted, subgroups: {} };
     else catData.txs = sorted;
@@ -1366,21 +1384,24 @@ function renderClassify() {
     const total = sorted.reduce((s, t) => s + t.monto, 0);
     const isNeg = total < 0;
     const pct = grandTotal > 0 && total > 0 ? (total / grandTotal * 100).toFixed(1) + '%' : '';
-    const hasSubgroups = Object.keys(subgroups).length > 0;
 
-    // Build subcat HTML — subgroups are views, all txs remain in sorted
+    // Group txs by subgrupo
+    const sgMap = {}; // sgName -> [txs]
+    const noSg = [];
+    for (const tx of sorted) {
+      if (tx.subgrupo) {
+        if (!sgMap[tx.subgrupo]) sgMap[tx.subgrupo] = [];
+        sgMap[tx.subgrupo].push(tx);
+      } else {
+        noSg.push(tx);
+      }
+    }
+
     let subcatHTML = '';
 
-    // Render subgroups first (visual grouping only)
-    for (const [sgName, sgTxs] of Object.entries(subgroups)) {
-      // Filter sgTxs to only those that exist in sorted (by key match)
-      const sgValid = sgTxs.filter(t => sorted.some(s =>
-        s.fecha === t.fecha && s.descripcion === t.descripcion && s.monto === t.monto
-      ));
-      if (!sgValid.length) continue;
-      const sgSorted = [...sgValid].sort((a, b) => parseFecha(a.fecha) - parseFecha(b.fecha));
-      subgroups[sgName] = sgSorted;
-      const sgTotal = sgSorted.reduce((s, t) => s + t.monto, 0);
+    // Render subgroups
+    for (const [sgName, sgTxs] of Object.entries(sgMap)) {
+      const sgTotal = sgTxs.reduce((s, t) => s + t.monto, 0);
       const sgPct = total !== 0 ? (sgTotal / Math.abs(total) * 100).toFixed(0) + '%' : '';
       const sgIdx = `${slugify(cat)}-sg-${slugify(sgName)}`;
       subcatHTML += `
@@ -1395,18 +1416,13 @@ function renderClassify() {
             <span class="subcat-total">${fmtCLP(sgTotal)}</span>
           </div>
           <div class="subcat-rows">
-            ${sgSorted.map((tx) => {
-              const idx = sorted.findIndex(s =>
-                s.fecha === tx.fecha && s.descripcion === tx.descripcion && s.monto === tx.monto
-              );
-              return renderTxRow(cat, tx, idx, true);
-            }).join('')}
+            ${sgTxs.map(tx => renderTxRow(cat, tx, sorted.indexOf(tx), true)).join('')}
           </div>
         </div>`;
     }
 
-    // Render ALL txs below subgroups (complete list)
-    subcatHTML += sorted.map((tx, idx) => renderTxRow(cat, tx, idx, false)).join('');
+    // Render unclassified txs
+    subcatHTML += noSg.map(tx => renderTxRow(cat, tx, sorted.indexOf(tx), false)).join('');
 
     return `
     <div class="cat-block" id="cat-${slugify(cat)}">
@@ -1458,16 +1474,9 @@ function toggleSubcat(id) {
 function addSubgroup(cat) {
   const name = prompt('Nombre del subgrupo:');
   if (!name || !name.trim()) return;
-  const m = state.months[state.activeMonth];
-  if (!m) return;
-  let catData = m.categories[cat];
-  if (Array.isArray(catData)) {
-    catData = { txs: catData, subgroups: {} };
-    m.categories[cat] = catData;
-  }
-  if (!catData.subgroups[name]) catData.subgroups[name] = [];
   saveState();
   renderClassify();
+  toast(`Subgrupo "${name}" creado — asigna movimientos con el botón ⇄`);
 }
 
 function renameSubgroup(cat, oldName, newName) {
@@ -1475,14 +1484,11 @@ function renameSubgroup(cat, oldName, newName) {
   if (!newName || newName === oldName) return;
   const m = state.months[state.activeMonth];
   if (!m) return;
-  const catData = m.categories[cat];
-  const sgs = getCatSubgroups(catData);
-  if (sgs[newName]) {
-    sgs[newName] = [...sgs[newName], ...(sgs[oldName] || [])];
-  } else {
-    sgs[newName] = sgs[oldName] || [];
+  // Update tx.subgrupo field for all txs in this category
+  const txs = getCatTxs(m.categories[cat]);
+  for (const tx of txs) {
+    if (tx.subgrupo === oldName) tx.subgrupo = newName;
   }
-  delete sgs[oldName];
   saveState();
   renderClassify();
 }
@@ -1490,25 +1496,12 @@ function renameSubgroup(cat, oldName, newName) {
 function moveToSubgroup(cat, txIdx, sgName) {
   const m = state.months[state.activeMonth];
   if (!m) return;
-  let catData = m.categories[cat];
-  if (Array.isArray(catData)) {
-    catData = { txs: catData, subgroups: {} };
-    m.categories[cat] = catData;
-  }
-  const tx = catData.txs[txIdx];
+  const txs = getCatTxs(m.categories[cat]);
+  const tx = txs[txIdx];
   if (!tx) return;
-  // Remove this tx from ALL subgroups first (by key match)
-  const key = `${tx.fecha}|${tx.descripcion}|${tx.monto}`;
-  for (const sgTxs of Object.values(catData.subgroups)) {
-    for (let i = sgTxs.length - 1; i >= 0; i--) {
-      const k = `${sgTxs[i].fecha}|${sgTxs[i].descripcion}|${sgTxs[i].monto}`;
-      if (k === key) sgTxs.splice(i, 1);
-    }
-  }
-  // Add to target subgroup (store the tx object from txs array)
-  if (sgName && catData.subgroups[sgName]) {
-    catData.subgroups[sgName].push(tx);
-  }
+  // Simply set or clear the subgrupo field
+  if (sgName) tx.subgrupo = sgName;
+  else delete tx.subgrupo;
   saveState();
   renderClassify();
 }
@@ -1712,26 +1705,20 @@ function openBulkMoveModal() {
   document.getElementById('moveTxDesc').textContent =
     `${selection.length} movimiento${selection.length > 1 ? 's' : ''} seleccionado${selection.length > 1 ? 's' : ''}`;
   const opts = document.getElementById('catOptions');
-
-  // Collect all subgroups across all categories involved in selection
   const involvedCats = [...new Set(selection.map(s => s.cat))];
   let sgHtml = '';
   for (const cat of involvedCats) {
-    const sgNames = Object.keys(getCatSubgroups(m.categories[cat]));
+    const txs = getCatTxs(m.categories[cat]);
+    const sgNames = [...new Set(txs.map(t => t.subgrupo).filter(Boolean))];
     if (sgNames.length > 0) {
       sgHtml += `<div style="font-size:11px;color:var(--text3);padding:4px 0 2px">Subgrupos de ${escHtml(cat)}</div>`;
-      sgHtml += sgNames.map(sg => `<div class="cat-option" onclick="bulkMoveToSubgroup('${escJs(cat)}','${escJs(sg)}')">
-        <span>↳</span> ${escHtml(sg)}
-      </div>`).join('');
-      sgHtml += `<div class="cat-option" onclick="bulkMoveToSubgroup('${escJs(cat)}',null)"><span>✕</span> Sin subgrupo (quitar de subgrupo)</div>`;
+      sgHtml += sgNames.map(sg => `<div class="cat-option" onclick="bulkMoveToSubgroup('${escJs(cat)}','${escJs(sg)}')"><span>↳</span> ${escHtml(sg)}</div>`).join('');
+      sgHtml += `<div class="cat-option" onclick="bulkMoveToSubgroup('${escJs(cat)}',null)"><span>✕</span> Quitar del subgrupo</div>`;
     }
   }
-  if (sgHtml) sgHtml += `<div style="font-size:11px;color:var(--text3);padding:6px 0 2px">Otra categoría</div>`;
-
+  if (sgHtml) sgHtml += `<div style="font-size:11px;color:var(--text3);padding:6px 0 2px">Mover a otra categoría</div>`;
   opts.innerHTML = sgHtml + Object.keys(m.categories)
-    .map(c => `<div class="cat-option" onclick="bulkMoveTx('${escJs(c)}')">
-      <span>📁</span> ${escHtml(c)}
-    </div>`).join('')
+    .map(c => `<div class="cat-option" onclick="bulkMoveTx('${escJs(c)}')"><span>📁</span> ${escHtml(c)}</div>`).join('')
     + `<div class="cat-option" onclick="bulkMoveTxNew()"><span>✚</span> Nueva categoría…</div>`;
   movePending = null;
   document.getElementById('moveModal').classList.add('open');
@@ -1739,33 +1726,14 @@ function openBulkMoveModal() {
 
 function bulkMoveToSubgroup(targetCat, sgName) {
   const m = state.months[state.activeMonth];
-  let catData = m.categories[targetCat];
-  if (!catData) return;
-  if (Array.isArray(catData)) {
-    catData = { txs: catData, subgroups: {} };
-    m.categories[targetCat] = catData;
-  }
-
-  // Filter selections for this category, sort descending to avoid index shifting
-  const forThisCat = selection
-    .filter(s => s.cat === targetCat)
-    .sort((a, b) => b.idx - a.idx);
-
+  const forThisCat = selection.filter(s => s.cat === targetCat).sort((a, b) => b.idx - a.idx);
+  const txs = getCatTxs(m.categories[targetCat]);
   for (const { idx } of forThisCat) {
-    const tx = catData.txs[idx];
+    const tx = txs[idx];
     if (!tx) continue;
-    // Remove from any existing subgroup first
-    for (const sg of Object.values(catData.subgroups)) {
-      const i = sg.indexOf(tx);
-      if (i !== -1) sg.splice(i, 1);
-    }
-    // Add to target subgroup
-    if (sgName && catData.subgroups[sgName]) {
-      catData.subgroups[sgName].push(tx);
-    }
-    // If sgName is null, tx stays unclassified (already removed from subgroups)
+    if (sgName) tx.subgrupo = sgName;
+    else delete tx.subgrupo;
   }
-
   selection = [];
   saveState();
   closeModal();
@@ -1856,19 +1824,25 @@ function openMoveModal(cat, idx) {
   const tx = getCatTxs(m.categories[cat])[idx];
   document.getElementById('moveTxDesc').textContent = tx.descripcion;
   const opts = document.getElementById('catOptions');
-  // Show subgroup options within same category + other categories
-  const sgNames = Object.keys(getCatSubgroups(m.categories[cat]));
+
+  // Get all existing subgroup names in this category
+  const txs = getCatTxs(m.categories[cat]);
+  const sgNames = [...new Set(txs.map(t => t.subgrupo).filter(Boolean))];
+
   let sgHtml = '';
   if (sgNames.length > 0) {
     sgHtml = `<div style="font-size:11px;color:var(--text3);padding:4px 0 2px">Clasificar en subgrupo de ${escHtml(cat)}</div>`;
     sgHtml += sgNames.map(sg => `<div class="cat-option" onclick="moveTxToSubgroup('${escJs(cat)}',${idx},'${escJs(sg)}')">
       <span>↳</span> ${escHtml(sg)}
     </div>`).join('');
-    sgHtml += `<div class="cat-option" onclick="moveTxToSubgroup('${escJs(cat)}',${idx},null)">
-      <span>✕</span> Quitar del subgrupo
-    </div>`;
+    if (tx.subgrupo) {
+      sgHtml += `<div class="cat-option" onclick="moveTxToSubgroup('${escJs(cat)}',${idx},null)">
+        <span>✕</span> Quitar del subgrupo
+      </div>`;
+    }
     sgHtml += `<div style="font-size:11px;color:var(--text3);padding:6px 0 2px">Mover a otra categoría</div>`;
   }
+
   opts.innerHTML = sgHtml + Object.keys(m.categories)
     .filter(c => c !== cat)
     .map(c => `<div class="cat-option" onclick="moveTx('${escJs(c)}')">
@@ -1942,14 +1916,16 @@ function renderCompare() {
   for (const k of keys) for (const c of Object.keys(state.months[k].categories)) allCats.add(c);
   const cats = [...allCats].sort();
 
-  // Collect all subgroup names per category
+  // Collect all subgroup names per category using tx.subgrupo
   const allSubgroups = {}; // cat -> Set of sgNames
   for (const k of keys) {
     for (const [cat, catData] of Object.entries(state.months[k].categories)) {
-      const sgs = getCatSubgroups(catData);
-      if (Object.keys(sgs).length > 0) {
-        if (!allSubgroups[cat]) allSubgroups[cat] = new Set();
-        for (const sg of Object.keys(sgs)) allSubgroups[cat].add(sg);
+      const txs = getCatTxs(catData);
+      for (const tx of txs) {
+        if (tx.subgrupo) {
+          if (!allSubgroups[cat]) allSubgroups[cat] = new Set();
+          allSubgroups[cat].add(tx.subgrupo);
+        }
       }
     }
   }
@@ -1992,8 +1968,8 @@ function renderCompare() {
     if (hasSg) {
       for (const sgName of allSubgroups[cat]) {
         const sgVals = keys.map(k => {
-          const sgs = safeGetCatSubgroups(state.months, k, cat);
-          return (sgs[sgName] || []).reduce((s, t) => s + t.monto, 0);
+          const txs = safeGetCatTxs(state.months, k, cat);
+          return txs.filter(t => t.subgrupo === sgName).reduce((s, t) => s + t.monto, 0);
         });
         const sgDiff = sgVals[sgVals.length - 1] - sgVals[sgVals.length - 2];
         const sgPct = sgVals[sgVals.length - 2] !== 0 ? ((sgDiff / Math.abs(sgVals[sgVals.length - 2])) * 100).toFixed(0) + '%' : 'nuevo';
@@ -2034,13 +2010,13 @@ function renderCompare() {
     const total = keys.reduce((sum, k) => {
       return sum + safeGetCatTxs(state.months, k, c).reduce((s, t) => s + t.monto, 0);
     }, 0);
-    // compute subgroup totals
+    // compute subgroup totals using tx.subgrupo
     const sgTotals = {};
     if (allSubgroups[c]) {
       for (const sg of allSubgroups[c]) {
         sgTotals[sg] = keys.reduce((sum, k) => {
-          const sgs = safeGetCatSubgroups(state.months, k, c);
-          return sum + (sgs[sg] || []).reduce((s, t) => s + t.monto, 0);
+          const txs = safeGetCatTxs(state.months, k, c);
+          return sum + txs.filter(t => t.subgrupo === sg).reduce((s, t) => s + t.monto, 0);
         }, 0);
       }
     }
@@ -2278,7 +2254,7 @@ function toast(msg) {
 
 // ── PASSWORD ──────────────────────────────────────────────────────────────
 // Cambia esta contraseña por la que quieras usar
-const APP_PASSWORD = 'totalmetal2026';
+const APP_PASSWORD = 'Monis2311';
 const SESSION_KEY  = 'cartola_auth';
 
 function checkPassword() {
