@@ -853,6 +853,7 @@ header {
     <div class="sep"></div>
     <div class="sidebar-label">Opciones</div>
     <button class="btn btn-ghost btn-sm" onclick="addCategory()">+ Nueva categoría</button>
+    <button class="btn btn-ghost btn-sm" onclick="applyPrevClassification()">↺ Aplicar clasificación anterior</button>
     <button class="btn btn-ghost btn-sm" onclick="dedupMonth()">🧹 Limpiar duplicados</button>
     <button class="btn btn-ghost btn-sm" onclick="exportData()">⬆ Exportar datos</button>
     <label class="btn btn-ghost btn-sm" style="cursor:pointer">
@@ -2115,6 +2116,79 @@ function toggleCompSg(toggleId) {
       if (span) span.textContent = isOpen ? '▶' : '▼';
     }
   });
+}
+
+// ── APPLY PREV CLASSIFICATION ─────────────────────────────────────────────
+function applyPrevClassification() {
+  const m = state.months[state.activeMonth];
+  if (!m) { toast('Selecciona una cartola primero'); return; }
+
+  const order = getMonthOrder();
+  const currentIdx = order.indexOf(state.activeMonth);
+  if (currentIdx <= 0) { toast('No hay meses anteriores para comparar'); return; }
+
+  // Build lookup map from all previous months: descripcion -> {categoria, subgrupo, sgNames}
+  const lookup = {}; // descripcion (normalized) -> {categoria, subgrupo}
+  const sgNamesLookup = {}; // categoria -> Set of sgNames
+
+  for (let i = 0; i < currentIdx; i++) {
+    const pm = state.months[order[i]];
+    for (const [cat, catData] of Object.entries(pm.categories)) {
+      const txs = getCatTxs(catData);
+      // Carry over sgNames
+      for (const sg of (catData.sgNames || [])) {
+        if (!sgNamesLookup[cat]) sgNamesLookup[cat] = new Set();
+        sgNamesLookup[cat].add(sg);
+      }
+      for (const tx of txs) {
+        const key = tx.descripcion.trim().toLowerCase();
+        // Later months override earlier ones
+        lookup[key] = { categoria: cat, subgrupo: tx.subgrupo || null };
+        if (tx.subgrupo) {
+          if (!sgNamesLookup[cat]) sgNamesLookup[cat] = new Set();
+          sgNamesLookup[cat].add(tx.subgrupo);
+        }
+      }
+    }
+  }
+
+  // Apply to current month
+  let applied = 0;
+  for (const [cat, catData] of Object.entries(m.categories)) {
+    const txs = getCatTxs(catData);
+    for (const tx of txs) {
+      const key = tx.descripcion.trim().toLowerCase();
+      const match = lookup[key];
+      if (!match) continue;
+
+      // Apply subgrupo if same category and subgrupo exists
+      if (match.categoria === cat && match.subgrupo && !tx.subgrupo) {
+        tx.subgrupo = match.subgrupo;
+        // Ensure sgNames exists in catData
+        if (!catData.sgNames) catData.sgNames = [];
+        if (!catData.sgNames.includes(match.subgrupo)) catData.sgNames.push(match.subgrupo);
+        applied++;
+      }
+    }
+  }
+
+  // Also carry over sgNames definitions even if no txs matched yet
+  for (const [cat, sgSet] of Object.entries(sgNamesLookup)) {
+    if (m.categories[cat]) {
+      const catData = m.categories[cat];
+      if (!catData.sgNames) catData.sgNames = [];
+      for (const sg of sgSet) {
+        if (!catData.sgNames.includes(sg)) catData.sgNames.push(sg);
+      }
+    }
+  }
+
+  saveState();
+  renderClassify();
+  renderSidebar();
+  toast(applied > 0
+    ? `✓ ${applied} movimiento${applied > 1 ? 's' : ''} clasificado${applied > 1 ? 's' : ''} automáticamente`
+    : 'Sin coincidencias encontradas');
 }
 
 // ── DEDUP ─────────────────────────────────────────────────────────────────
