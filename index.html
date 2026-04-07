@@ -1733,13 +1733,35 @@ function openBulkMoveModal() {
 
 function bulkMoveToSubgroup(targetCat, sgName) {
   const m = state.months[state.activeMonth];
-  // Only move selections that belong to targetCat
-  const forThisCat = selection.filter(s => s.cat === targetCat);
-  for (const { cat, idx } of forThisCat) {
-    moveToSubgroup(cat, idx, sgName);
+  let catData = m.categories[targetCat];
+  if (!catData) return;
+  if (Array.isArray(catData)) {
+    catData = { txs: catData, subgroups: {} };
+    m.categories[targetCat] = catData;
   }
-  // Remaining selections (different cat) — ignore or move to targetCat
+
+  // Filter selections for this category, sort descending to avoid index shifting
+  const forThisCat = selection
+    .filter(s => s.cat === targetCat)
+    .sort((a, b) => b.idx - a.idx);
+
+  for (const { idx } of forThisCat) {
+    const tx = catData.txs[idx];
+    if (!tx) continue;
+    // Remove from any existing subgroup first
+    for (const sg of Object.values(catData.subgroups)) {
+      const i = sg.indexOf(tx);
+      if (i !== -1) sg.splice(i, 1);
+    }
+    // Add to target subgroup
+    if (sgName && catData.subgroups[sgName]) {
+      catData.subgroups[sgName].push(tx);
+    }
+    // If sgName is null, tx stays unclassified (already removed from subgroups)
+  }
+
   selection = [];
+  saveState();
   closeModal();
   updateBulkBar();
   renderClassify();
