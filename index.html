@@ -1299,6 +1299,14 @@ function getCatSubgroups(catData) {
 function catTotal(catData) {
   return getCatTxs(catData).reduce((s, t) => s + t.monto, 0);
 }
+function safeGetCatTxs(months, key, cat) {
+  if (!months[key] || !months[key].categories) return [];
+  return getCatTxs(months[key].categories[cat]);
+}
+function safeGetCatSubgroups(months, key, cat) {
+  if (!months[key] || !months[key].categories) return {};
+  return getCatSubgroups(months[key].categories[cat]);
+}
 // Upgrade old array-format categories to new object format
 function normalizeMonth(m) {
   if (!m || !m.categories) return;
@@ -1901,7 +1909,7 @@ function renderCompare() {
   // rows
   for (const cat of cats) {
     const vals = keys.map(k => {
-      const txs = getCatTxs(state.months[k]?.categories[cat]);
+      const txs = safeGetCatTxs(state.months, k, cat);
       return txs.reduce((s, t) => s + t.monto, 0);
     });
     const vPrev = vals[vals.length - 2];
@@ -1923,7 +1931,7 @@ function renderCompare() {
     if (hasSg) {
       for (const sgName of allSubgroups[cat]) {
         const sgVals = keys.map(k => {
-          const sgs = getCatSubgroups(state.months[k]?.categories[cat]);
+          const sgs = safeGetCatSubgroups(state.months, k, cat);
           return (sgs[sgName] || []).reduce((s, t) => s + t.monto, 0);
         });
         const sgDiff = sgVals[sgVals.length - 1] - sgVals[sgVals.length - 2];
@@ -1963,14 +1971,14 @@ function renderCompare() {
   // Bar chart: suma acumulada de todos los meses con subgrupos, sorted desc
   const catTotals = cats.map(c => {
     const total = keys.reduce((sum, k) => {
-      return sum + getCatTxs(state.months[k]?.categories[c]).reduce((s, t) => s + t.monto, 0);
+      return sum + safeGetCatTxs(state.months, k, c).reduce((s, t) => s + t.monto, 0);
     }, 0);
     // compute subgroup totals
     const sgTotals = {};
     if (allSubgroups[c]) {
       for (const sg of allSubgroups[c]) {
         sgTotals[sg] = keys.reduce((sum, k) => {
-          const sgs = getCatSubgroups(state.months[k]?.categories[c]);
+          const sgs = safeGetCatSubgroups(state.months, k, c);
           return sum + (sgs[sg] || []).reduce((s, t) => s + t.monto, 0);
         }, 0);
       }
@@ -2122,7 +2130,7 @@ function exportExcel() {
     for (const k of keys) for (const c of Object.keys(state.months[k].categories)) allCats.add(c);
     const compRows = [['Categoría', ...keys]];
     for (const cat of allCats) {
-      compRows.push([cat, ...keys.map(k => getCatTxs(state.months[k]?.categories[cat]).reduce((s, t) => s + t.monto, 0))]);
+      compRows.push([cat, ...keys.map(k => safeGetCatTxs(state.months, k, cat).reduce((s, t) => s + t.monto, 0))]);
     }
     compRows.push(['TOTAL', ...keys.map(k => calcMonthTotal(state.months[k]))]);
     XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(compRows), 'Comparativa');
