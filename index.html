@@ -2116,29 +2116,61 @@ function dedupMonth() {
   const m = state.months[state.activeMonth];
   if (!m) { toast('Selecciona una cartola primero'); return; }
   let removed = 0;
+
   for (const [cat, catData] of Object.entries(m.categories)) {
-    const txs = getCatTxs(catData);
-    const seen = new Set();
+    if (Array.isArray(catData)) {
+      m.categories[cat] = { txs: catData, subgroups: {} };
+      continue;
+    }
+    const txs = catData.txs || [];
+    const sgs = catData.subgroups || {};
+
+    // Collect all tx references that are in subgroups
+    const inSubgroup = new Set();
+    for (const sgTxs of Object.values(sgs)) {
+      for (const tx of sgTxs) inSubgroup.add(tx);
+    }
+
+    // Step 1: remove from txs any tx whose key matches a subgroup tx
+    // (these are duplicates created when moving from top-level category)
+    const sgKeys = new Set();
+    for (const tx of inSubgroup) {
+      sgKeys.add(`${tx.fecha}|${tx.descripcion}|${tx.monto}`);
+    }
+
     const deduped = [];
     for (const tx of txs) {
-      // Use fecha+descripcion+monto as unique key
+      const key = `${tx.fecha}|${tx.descripcion}|${tx.monto}`;
+      if (inSubgroup.has(tx)) {
+        // This IS the subgroup tx — keep it
+        deduped.push(tx);
+      } else if (sgKeys.has(key)) {
+        // This is a duplicate of a subgroup tx — remove it
+        removed++;
+      } else {
+        deduped.push(tx);
+      }
+    }
+
+    // Step 2: also remove exact duplicate txs (same key, not in subgroup)
+    const seen = new Set();
+    const finalDeduped = [];
+    for (const tx of deduped) {
       const key = `${tx.fecha}|${tx.descripcion}|${tx.monto}`;
       if (!seen.has(key)) {
         seen.add(key);
-        deduped.push(tx);
+        finalDeduped.push(tx);
+      } else if (inSubgroup.has(tx)) {
+        // Keep subgroup tx even if "duplicate"
+        finalDeduped.push(tx);
       } else {
         removed++;
-        // Also remove from subgroups
-        const sgs = getCatSubgroups(catData);
-        for (const sg of Object.values(sgs)) {
-          const i = sg.indexOf(tx);
-          if (i !== -1) sg.splice(i, 1);
-        }
       }
     }
-    if (Array.isArray(catData)) m.categories[cat] = { txs: deduped, subgroups: {} };
-    else catData.txs = deduped;
+
+    catData.txs = finalDeduped;
   }
+
   saveState();
   renderClassify();
   renderSidebar();
