@@ -958,6 +958,12 @@ header {
 </div>
 
 <div class="toast" id="toast"></div>
+<div id="backupBanner" style="display:none;background:#2a1f00;border-bottom:1px solid #f59e0b;padding:7px 16px;align-items:center;gap:10px;font-size:12px;color:#f59e0b;position:relative;z-index:10">
+  <span>⚠️</span>
+  <span id="backupBannerMsg" style="flex:1">Hace más de 7 días que no exportas un respaldo</span>
+  <button onclick="exportData();dismissBackupBanner()" style="height:26px;padding:0 12px;border-radius:5px;border:1px solid #f59e0b;background:transparent;color:#f59e0b;cursor:pointer;font-size:11px;font-weight:500">💾 Exportar ahora</button>
+  <button onclick="dismissBackupBanner()" style="background:none;border:none;color:#888;cursor:pointer;font-size:14px;padding:0 4px" title="Recordar mañana">✕</button>
+</div>
 
 <script>
 // ── pdfjsLib ──────────────────────────────────────────────────────────────
@@ -1062,7 +1068,7 @@ ${pdfText.substring(0, 14000)}`;
         'anthropic-dangerous-direct-browser-access': 'true'
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 8000,
         messages: [{ role: 'user', content: prompt }]
       })
@@ -2274,6 +2280,8 @@ function exportData() {
   a.download = 'cartola_datos_' + new Date().toISOString().slice(0,10) + '.json';
   a.click();
   URL.revokeObjectURL(url);
+  localStorage.setItem('cartola_last_export', new Date().toISOString());
+  dismissBackupBanner();
   toast('✓ Datos exportados');
 }
 
@@ -2430,6 +2438,31 @@ function updateApiKeyDot() {
   dot.classList.toggle('ok', key.startsWith('sk-ant-'));
 }
 
+// ── BACKUP REMINDER ───────────────────────────────────────────────────────
+function checkBackupReminder() {
+  const dismissUntil = localStorage.getItem('cartola_backup_dismiss');
+  if (dismissUntil && new Date() < new Date(dismissUntil)) return;
+  const hasData = Object.keys(state.months || {}).length > 0;
+  if (!hasData) return;
+  const lastExport = localStorage.getItem('cartola_last_export');
+  if (!lastExport) {
+    showBackupBanner('Nunca has exportado un respaldo de tus cartolas');
+    return;
+  }
+  const days = Math.floor((Date.now() - new Date(lastExport)) / 86400000);
+  if (days >= 7) showBackupBanner(`Hace ${days} día${days !== 1 ? 's' : ''} que no exportas un respaldo`);
+}
+function showBackupBanner(msg) {
+  const b = document.getElementById('backupBanner');
+  document.getElementById('backupBannerMsg').textContent = '⚠️  ' + msg;
+  b.style.display = 'flex';
+}
+function dismissBackupBanner() {
+  document.getElementById('backupBanner').style.display = 'none';
+  const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1); tomorrow.setHours(0,0,0,0);
+  localStorage.setItem('cartola_backup_dismiss', tomorrow.toISOString());
+}
+
 // ── INIT ──────────────────────────────────────────────────────────────────
 // Si ya autenticó en esta sesión, ocultar lock screen directamente
 if (sessionStorage.getItem(SESSION_KEY) === '1') {
@@ -2442,6 +2475,7 @@ if (savedKey) document.getElementById('apikeyInput').value = savedKey;
 updateApiKeyDot();
 renderSidebar();
 renderClassify();
+checkBackupReminder();
 </script>
 </body>
 </html>
