@@ -973,6 +973,9 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs
 const STORAGE_KEY = 'cartola_analyzer_v2';
 let state = { months: {}, activeMonth: null, monthOrder: [] };
 
+// URL del JSON de respaldo en GitHub (raw)
+const BACKUP_JSON_URL = 'https://raw.githubusercontent.com/TM-Gonzalo/Cartola-MC/main/cartola_datos.json';
+
 function loadState() {
   try {
     const s = localStorage.getItem(STORAGE_KEY);
@@ -985,6 +988,40 @@ function loadState() {
 }
 function saveState() {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
+}
+
+// Auto-carga desde GitHub si localStorage está vacío
+async function autoLoadFromGitHub() {
+  const hasData = Object.keys(state.months || {}).length > 0;
+  if (hasData) return; // Ya hay datos, no hacer nada
+
+  setLoading(true, 'Cargando datos desde respaldo…');
+  try {
+    const res = await fetch(BACKUP_JSON_URL + '?t=' + Date.now()); // cache-bust
+    if (!res.ok) throw new Error('No se pudo acceder al respaldo');
+    const imported = await res.json();
+    if (!imported.months) throw new Error('Archivo inválido');
+    for (const m of Object.values(imported.months)) normalizeMonth(m);
+    state.months = { ...state.months, ...imported.months };
+    if (imported.monthOrder) {
+      const merged = [...(imported.monthOrder || [])];
+      for (const k of (state.monthOrder || [])) if (!merged.includes(k)) merged.push(k);
+      state.monthOrder = merged.filter(k => state.months[k]);
+    }
+    if (!state.activeMonth || !state.months[state.activeMonth]) {
+      const order = getMonthOrder();
+      state.activeMonth = order.length ? order[order.length - 1] : null;
+    }
+    saveState();
+    renderSidebar();
+    renderClassify();
+    renderCompare();
+    toast('✓ Datos cargados desde respaldo GitHub');
+  } catch(err) {
+    toast('Sin respaldo disponible — sube una cartola PDF para comenzar');
+  } finally {
+    setLoading(false);
+  }
 }
 
 // ── MONTH COLORS ──────────────────────────────────────────────────────────
@@ -2476,6 +2513,8 @@ updateApiKeyDot();
 renderSidebar();
 renderClassify();
 checkBackupReminder();
+// Auto-cargar desde GitHub si no hay datos en localStorage
+autoLoadFromGitHub();
 </script>
 </body>
 </html>

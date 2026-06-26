@@ -1,0 +1,5839 @@
+{
+  "months": {
+    "Enero 2026": {
+      "key": "Enero 2026",
+      "periodo": "Enero 2026",
+      "fechaDesde": "22/12/2025",
+      "fechaHasta": "26/01/2026",
+      "totalFacturado": 9212794,
+      "categories": {
+        "Cuotas vigentes": {
+          "txs": [
+            {
+              "fecha": "05/03/24",
+              "descripcion": "MP *MACONLINE",
+              "monto": 23611,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 22,
+              "cuotaTotal": 36,
+              "subgrupo": "Mac"
+            },
+            {
+              "fecha": "10/03/25",
+              "descripcion": "AUTOCLASS",
+              "monto": 238374,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 10,
+              "cuotaTotal": 48,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "20/05/25",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 266009,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 9,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "07/07/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 203822,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "07/08/25",
+              "descripcion": "APPLE.COM CL APPLE CHILE",
+              "monto": 79166,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 24,
+              "subgrupo": "Mac"
+            },
+            {
+              "fecha": "24/08/25",
+              "descripcion": "MERCADO PAGO 4 TCOM",
+              "monto": 9388,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "02/09/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 276569,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 4,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "06/09/25",
+              "descripcion": "AUTOPLANET TIENDA WEB",
+              "monto": 41916,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "16/09/25",
+              "descripcion": "FORUS S.A.",
+              "monto": 11597,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "16/09/25",
+              "descripcion": "MERCADO PAGO 4 TCOM",
+              "monto": 11883,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "16/09/25",
+              "descripcion": "MERCADO PAGO 4 TCOM",
+              "monto": 7900,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "22/09/25",
+              "descripcion": "MP *MERCADO LIBRE",
+              "monto": 11512,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "07/10/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 53155,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "14/10/25",
+              "descripcion": "MP *SAMSONITE",
+              "monto": 13414,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 4,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "17/10/25",
+              "descripcion": "MUNICIPALIDAD DE PENALOLE",
+              "monto": 55802,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 3,
+              "subgrupo": "Permisos"
+            },
+            {
+              "fecha": "17/10/25",
+              "descripcion": "MUNICIPALIDAD DE PENALOLE",
+              "monto": 164241,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 3,
+              "subgrupo": "Permisos"
+            },
+            {
+              "fecha": "19/10/25",
+              "descripcion": "MERCADOPAGO*9PRODUCTOS",
+              "monto": 11253,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 4,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "19/10/25",
+              "descripcion": "MERCADOPAGO*9PRODUCTOS",
+              "monto": 1776,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 4,
+              "cuotaTotal": 12,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/10/25",
+              "descripcion": "MERCADOPAGO*MM20241202091",
+              "monto": 11567,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 3,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "09/11/25",
+              "descripcion": "MP *MERCADO LIBRE",
+              "monto": 11519,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "27/11/25",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 55721,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "29/11/25",
+              "descripcion": "PAYU *ADIDAS",
+              "monto": 13327,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Varios"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Ruedas",
+            "Mac",
+            "NY",
+            "Puerto Varas",
+            "Permisos",
+            "Varios"
+          ]
+        },
+        "Compras / Tiendas": {
+          "txs": [
+            {
+              "fecha": "22/12/25",
+              "descripcion": "MERCADOPAGO*MERCADOLIBRE",
+              "monto": 22266,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "24/12/25",
+              "descripcion": "BAR MOVIL 98",
+              "monto": 5230,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "26/12/25",
+              "descripcion": "TABAQUERIAS GLOBAL SPA",
+              "monto": 9700,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "27/12/25",
+              "descripcion": "CENCO PARKING PENALOLEN",
+              "monto": 500,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "28/12/25",
+              "descripcion": "PARIS QUILIN",
+              "monto": 6990,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "28/12/25",
+              "descripcion": "PARIS QUILIN",
+              "monto": 13490,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "28/12/25",
+              "descripcion": "MALL PASEO QUILIN",
+              "monto": 3300,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "29/12/25",
+              "descripcion": "UPA] F286 ACSA FACH",
+              "monto": 9200,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "31/12/25",
+              "descripcion": "BAR MOVIL 98",
+              "monto": 14500,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "31/12/25",
+              "descripcion": "MINIMARKET",
+              "monto": 4300,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "01/01/26",
+              "descripcion": "CINEPOLIS WEB",
+              "monto": 64800,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "02/01/26",
+              "descripcion": "PASEO QUILIN",
+              "monto": 31400,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "02/01/26",
+              "descripcion": "HERMANOS CACERES SPA",
+              "monto": 3100,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "03/01/26",
+              "descripcion": "TIENDA MALL PLAZA EGANA",
+              "monto": 3100,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "04/01/26",
+              "descripcion": "MERCADOPAGO*DESARROLLO",
+              "monto": 10300,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "04/01/26",
+              "descripcion": "EASY PENALOLEN",
+              "monto": 30370,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Casa"
+            },
+            {
+              "fecha": "10/01/26",
+              "descripcion": "BAR MOVIL 98",
+              "monto": 17200,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "13/01/26",
+              "descripcion": "MERPAGO*MELIMAS",
+              "monto": 12990,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "13/01/26",
+              "descripcion": "ALDO LOS DOMINICOS",
+              "monto": 39900,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "14/01/26",
+              "descripcion": "LATAM.COM XP OTRAS",
+              "monto": 122452,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "17/01/26",
+              "descripcion": "ALTARO SPA",
+              "monto": 9200,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "18/01/26",
+              "descripcion": "MERCADOPAGO*ECOMARKETPAPU",
+              "monto": 16180,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "18/01/26",
+              "descripcion": "SUMUP * IM PAPUDO - PA",
+              "monto": 1680,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "19/01/26",
+              "descripcion": "MERPAGO*CABIFY2604W0ROWGG",
+              "monto": 6692,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/01/26",
+              "descripcion": "KAMEN",
+              "monto": 1640,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "23/01/26",
+              "descripcion": "DP *FALABELLA.COM",
+              "monto": 28970,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "23/01/26",
+              "descripcion": "DP *FALABELLA.COM",
+              "monto": 19990,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "23/01/26",
+              "descripcion": "CENCO PARKING PENALOLEN",
+              "monto": 350,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "24/01/26",
+              "descripcion": "SANTO CIELO PLAN VERANO",
+              "monto": 3690,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "25/01/26",
+              "descripcion": "SANTO CIELO PLAN VERANO",
+              "monto": 2990,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Supermercado",
+            "Casa",
+            "Amorcitos",
+            "Varios"
+          ]
+        },
+        "Alimentación / Restaurantes": {
+          "txs": [
+            {
+              "fecha": "22/12/25",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16060,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "22/12/25",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 35278,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "22/12/25",
+              "descripcion": "BOOZ.CL",
+              "monto": 63930,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "23/12/25",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 11550,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "26/12/25",
+              "descripcion": "ENUSS",
+              "monto": 40980,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "27/12/25",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 73721,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "28/12/25",
+              "descripcion": "ALEMAN EXPERTO QUILIN",
+              "monto": 51030,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "29/12/25",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16060,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "30/12/25",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 13860,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "30/12/25",
+              "descripcion": "SUC CONSISTORIAL",
+              "monto": 47175,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "02/01/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 65820,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "02/01/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 2713,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "02/01/26",
+              "descripcion": "PIZZAS DEL 10",
+              "monto": 14980,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "05/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 13189,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "06/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 19580,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "07/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 15950,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "07/01/26",
+              "descripcion": "BOOZ.CL",
+              "monto": 75810,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "08/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 11539,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "09/01/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 35090,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "10/01/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 40949,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "10/01/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 123,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "12/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 21120,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "13/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 7139,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "14/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 11649,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "15/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 15400,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "16/01/26",
+              "descripcion": "BANANA 2",
+              "monto": 63965,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "18/01/26",
+              "descripcion": "BANANA 1",
+              "monto": 103100,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "19/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 20350,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "20/01/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 36740,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "21/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 13200,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "22/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 7139,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "23/01/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 32340,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "23/01/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 72296,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "25/01/26",
+              "descripcion": "PAPABEL CHILE",
+              "monto": 3000,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "25/01/26",
+              "descripcion": "PAPABEL CHILE",
+              "monto": 24470,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Almuerzo Diario",
+            "Supermercado",
+            "Restaurant"
+          ]
+        },
+        "Bencina / Combustible": {
+          "txs": [
+            {
+              "fecha": "23/12/25",
+              "descripcion": "SHELL 1CLICK MI COPILO T1",
+              "monto": 64154,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "23/12/25",
+              "descripcion": "SAN PABLO ESQ. BISMARK",
+              "monto": 4600,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "23/12/25",
+              "descripcion": "SAN PABLO ESQ. BISMARK",
+              "monto": 9980,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "31/12/25",
+              "descripcion": "SHELL 1CLICK MI COPILO T1",
+              "monto": 68103,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "01/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 12190,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "07/01/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 11590,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "07/01/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 50684,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "09/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 10590,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "12/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 10290,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "14/01/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 11590,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "16/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 31404,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "17/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 7300,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "19/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 7690,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "20/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 10590,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "23/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 43175,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "23/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 17370,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "24/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 46949,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "24/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 4670,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Bencina",
+            "Compras"
+          ]
+        },
+        "Servicios / Cuentas": {
+          "txs": [
+            {
+              "fecha": "31/12/25",
+              "descripcion": "GTD MANQUEHUE S A",
+              "monto": 38134,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "02/01/26",
+              "descripcion": "PAT - CONFUTURO",
+              "monto": 47933,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "08/01/26",
+              "descripcion": "WOM WEBPAY",
+              "monto": 29960,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "22/01/26",
+              "descripcion": "WOM WEBPAY",
+              "monto": 29960,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "Salud / Seguros": {
+          "txs": [
+            {
+              "fecha": "02/01/26",
+              "descripcion": "SEGUROS UC CHRISTUS",
+              "monto": 112838,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "05/01/26",
+              "descripcion": "ASEGURADORA PORVENI",
+              "monto": 70830,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "07/01/26",
+              "descripcion": "SEG AUTO SANTANDER",
+              "monto": 41743,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "21/01/26",
+              "descripcion": "FARMACIA PURA VIDA",
+              "monto": 17990,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Farmacia"
+            },
+            {
+              "fecha": "21/01/26",
+              "descripcion": "ASOMEDUC",
+              "monto": 13849,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Clinica"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Seguros",
+            "Farmacia",
+            "Clinica"
+          ]
+        },
+        "Notas de crédito / Abonos": {
+          "txs": [
+            {
+              "fecha": "23/12/25",
+              "descripcion": "NOTA DE CREDITO",
+              "monto": -3988,
+              "tipo": "abono",
+              "categoria": "Notas de crédito / Abonos",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "TotalMetal": {
+          "txs": [
+            {
+              "fecha": "15/01/26",
+              "descripcion": "FERRETERIA O HIGGINS SANT",
+              "monto": 194714,
+              "tipo": "compra",
+              "categoria": "TotalMetal",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "15/01/26",
+              "descripcion": "UTECSA",
+              "monto": 370090,
+              "tipo": "compra",
+              "categoria": "TotalMetal",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "15/01/26",
+              "descripcion": "IMPORTPER SANTIAGO",
+              "monto": 127520,
+              "tipo": "compra",
+              "categoria": "TotalMetal",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "19/01/26",
+              "descripcion": "PLASTICOS AMERICA SANTIAG",
+              "monto": 4081297,
+              "tipo": "compra",
+              "categoria": "TotalMetal",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "21/01/26",
+              "descripcion": "ROTAR LTDA.",
+              "monto": 184000,
+              "tipo": "compra",
+              "categoria": "TotalMetal",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "21/01/26",
+              "descripcion": "SERVIPER 10 DE JULIO 214",
+              "monto": 32654,
+              "tipo": "compra",
+              "categoria": "TotalMetal",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "22/01/26",
+              "descripcion": "MILAN FABJANOVIC",
+              "monto": 49224,
+              "tipo": "compra",
+              "categoria": "TotalMetal",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "22/01/26",
+              "descripcion": "START FIRE",
+              "monto": 15708,
+              "tipo": "compra",
+              "categoria": "TotalMetal",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "22/01/26",
+              "descripcion": "SANTIAGO CASA MATRIZ",
+              "monto": 6783,
+              "tipo": "compra",
+              "categoria": "TotalMetal",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "Ruedas": {
+          "txs": [
+            {
+              "fecha": "23/12/25",
+              "descripcion": "CARDOZO AUTOMOTRIZ SPA",
+              "monto": 30000,
+              "tipo": "compra",
+              "categoria": "Ruedas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "05/01/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 111349,
+              "tipo": "compra",
+              "categoria": "Ruedas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        }
+      },
+      "catOrder": [
+        "Cuotas vigentes",
+        "Compras / Tiendas",
+        "Alimentación / Restaurantes",
+        "Bencina / Combustible",
+        "Servicios / Cuentas",
+        "Salud / Seguros",
+        "Notas de crédito / Abonos",
+        "Ruedas",
+        "TotalMetal"
+      ]
+    },
+    "Marzo 2026": {
+      "key": "Marzo 2026",
+      "periodo": "Marzo 2026",
+      "fechaDesde": "23/02/2026",
+      "fechaHasta": "24/03/2026",
+      "totalFacturado": 3821697,
+      "categories": {
+        "Cuotas vigentes": {
+          "txs": [
+            {
+              "fecha": "04/02/26",
+              "descripcion": "MERCADO LIBRE",
+              "monto": 7960,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 3,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "18/02/26",
+              "descripcion": "KAUFMANN LAS PARCELAS",
+              "monto": 66246,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 6,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "05/03/26",
+              "descripcion": "MACONLINE",
+              "monto": 23611,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 24,
+              "cuotaTotal": 36,
+              "subgrupo": "Mac"
+            },
+            {
+              "fecha": "10/03/26",
+              "descripcion": "AUTOCLASS",
+              "monto": 238374,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 12,
+              "cuotaTotal": 48,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "13/03/26",
+              "descripcion": "METROGAS METROBOLSA.CL",
+              "monto": 33156,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 12,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "16/03/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 30596,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "16/03/26",
+              "descripcion": "MERCADO LIBRE",
+              "monto": 6998,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "19/03/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 56445,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 6,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "20/05/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 266009,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 11,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "07/07/26",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 203822,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 8,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "07/08/26",
+              "descripcion": "APPLE.COM CL APPLE CHILE",
+              "monto": 79166,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 7,
+              "cuotaTotal": 24,
+              "subgrupo": "Mac"
+            },
+            {
+              "fecha": "02/09/26",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 276569,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "06/09/26",
+              "descripcion": "AUTOPLANET TIENDA WEB",
+              "monto": 41916,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 7,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "07/10/26",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 53155,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "14/10/26",
+              "descripcion": "SAMSONITE",
+              "monto": 13412,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "19/10/26",
+              "descripcion": "MERCADOPAGO*9PRODUCTOS",
+              "monto": 1776,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 12,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "19/10/26",
+              "descripcion": "MERCADOPAGO*9PRODUCTOS",
+              "monto": 11250,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "09/11/26",
+              "descripcion": "MERCADO LIBRE",
+              "monto": 11519,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "27/11/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 55721,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 4,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "29/11/26",
+              "descripcion": "ADIDAS",
+              "monto": 13326,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 3,
+              "subgrupo": "Varios"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Ruedas",
+            "NY",
+            "Mac",
+            "Varios",
+            "Puerto Varas",
+            "Permisos"
+          ]
+        },
+        "Compras / Tiendas": {
+          "txs": [
+            {
+              "fecha": "20/02/26",
+              "descripcion": "AGUILA HERMANOS",
+              "monto": 20000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "03/03/26",
+              "descripcion": "ACTIVIDADES ON LINE",
+              "monto": 2700,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "05/03/26",
+              "descripcion": "UPA] F286 ACSA FACH",
+              "monto": 13790,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "06/03/26",
+              "descripcion": "OKM EL PARQUE",
+              "monto": 5380,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "08/03/26",
+              "descripcion": "VENTIPAYCOM",
+              "monto": 44064,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "09/03/26",
+              "descripcion": "MERCADO FLORES Y PLANTAS",
+              "monto": 490,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "09/03/26",
+              "descripcion": "FLORECER",
+              "monto": 40000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "10/03/26",
+              "descripcion": "PAYU   *UBER TRIP",
+              "monto": 4897,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "11/03/26",
+              "descripcion": "PARQUE ARAUCO OSHER CHILE",
+              "monto": 140000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "11/03/26",
+              "descripcion": "UPA] F286 ACSA FACH",
+              "monto": 13040,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "14/03/26",
+              "descripcion": "MERPAGO*MELIMAS",
+              "monto": 12990,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "15/03/26",
+              "descripcion": "CENCO PARKING PENALOLEN",
+              "monto": 500,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "16/03/26",
+              "descripcion": "UPA] F286 ACSA FACH",
+              "monto": 10590,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/03/26",
+              "descripcion": "MINIMARKET ANTONELLA SPA",
+              "monto": 1800,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/03/26",
+              "descripcion": "MINIMARKET ANTONELLA SPA",
+              "monto": 1160,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/03/26",
+              "descripcion": "MINIMARKET ANTONELLA SPA",
+              "monto": 8790,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/03/26",
+              "descripcion": "CENCO PARKING PENALOLEN",
+              "monto": 350,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Supermercado",
+            "Varios",
+            "Vacaciones",
+            "Casa",
+            "Amorcitos",
+            "Peluditos"
+          ]
+        },
+        "Alimentación / Restaurantes": {
+          "txs": [
+            {
+              "fecha": "20/02/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 27390,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "23/02/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16280,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "23/02/26",
+              "descripcion": "BOOZ.CL",
+              "monto": 93723,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "24/02/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 9999,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "25/02/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 15290,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "26/02/26",
+              "descripcion": "EL POLLO CABALLO",
+              "monto": 23210,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "27/02/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 15950,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "02/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 17710,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "03/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 10890,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "03/03/26",
+              "descripcion": "LA TETERIA",
+              "monto": 52900,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "04/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16500,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "04/03/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 74882,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "06/03/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 27573,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "08/03/26",
+              "descripcion": "CHINA VILLAGE SPA",
+              "monto": 43100,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "09/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 17710,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "10/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 10890,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "10/03/26",
+              "descripcion": "MP*MUNDOMIEL",
+              "monto": 24790,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "11/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16830,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "12/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 15290,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "14/03/26",
+              "descripcion": "MP*MICOCACOLA",
+              "monto": 24950,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "14/03/26",
+              "descripcion": "BOOZ.CL",
+              "monto": 60030,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "15/03/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 106113,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "16/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 9999,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "17/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 9999,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "18/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 13750,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "19/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 15290,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "20/03/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 28747,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "21/03/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 47403,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "23/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 3960,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "23/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 11330,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Almuerzo Diario",
+            "Supermercado",
+            "Restaurant"
+          ]
+        },
+        "Bencina / Combustible": {
+          "txs": [
+            {
+              "fecha": "20/02/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 10370,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "20/02/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 58184,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "23/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 13580,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "26/02/26",
+              "descripcion": "PRONTO QUILIN",
+              "monto": 14970,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "28/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 6600,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "28/02/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 11590,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "04/03/26",
+              "descripcion": "COPEC APP",
+              "monto": 14500,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "04/03/26",
+              "descripcion": "COPEC APP",
+              "monto": 9180,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "08/03/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 75470,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "08/03/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 9400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "09/03/26",
+              "descripcion": "PRONTO EXP RENCA 2801",
+              "monto": 3090,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "11/03/26",
+              "descripcion": "COPEC APP",
+              "monto": 5200,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "16/03/26",
+              "descripcion": "SHELL 1CLICK MI COPILO T1",
+              "monto": 61713,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "19/03/26",
+              "descripcion": "COPEC APP",
+              "monto": 9200,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "21/03/26",
+              "descripcion": "COPEC APP",
+              "monto": 9200,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "23/03/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 60092,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Compras",
+            "Bencina"
+          ]
+        },
+        "Servicios / Cuentas": {
+          "txs": [
+            {
+              "fecha": "26/02/26",
+              "descripcion": "WOM WEBPAY",
+              "monto": 42276,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "01/03/26",
+              "descripcion": "GTD MANQUEHUE S A",
+              "monto": 38591,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "14/03/26",
+              "descripcion": "NETFLIX",
+              "monto": 9990,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "Salud / Seguros": {
+          "txs": [
+            {
+              "fecha": "02/03/26",
+              "descripcion": "PAT - CONFUTURO",
+              "monto": 48011,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "02/03/26",
+              "descripcion": "SEGUROS UC CHRISTUS",
+              "monto": 113022,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "02/03/26",
+              "descripcion": "AHUM L572 CONSISTORIAL",
+              "monto": 21609,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Farmacia"
+            },
+            {
+              "fecha": "05/03/26",
+              "descripcion": "ASEGURADORA PORVENI",
+              "monto": 70958,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "06/03/26",
+              "descripcion": "SEG AUTO SANTANDER",
+              "monto": 41816,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "14/03/26",
+              "descripcion": "CRUZ VERDE CV499",
+              "monto": 22802,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Farmacia"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Seguros",
+            "Farmacia",
+            "Clinica"
+          ]
+        },
+        "Notas de crédito / Abonos": {
+          "txs": [
+            {
+              "fecha": "20/02/26",
+              "descripcion": "NOTA DE CREDITO",
+              "monto": -24172,
+              "tipo": "abono",
+              "categoria": "Notas de crédito / Abonos",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "04/03/26",
+              "descripcion": "NOTA DE CREDITO",
+              "monto": -5720,
+              "tipo": "abono",
+              "categoria": "Notas de crédito / Abonos",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "Ruedas": {
+          "txs": [
+            {
+              "fecha": "10/03/26",
+              "descripcion": "AE SERVICE",
+              "monto": 213129,
+              "tipo": "compra",
+              "categoria": "Ruedas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "Equilibre": {
+          "txs": [
+            {
+              "fecha": "14/03/26",
+              "descripcion": "CENTRO ECUESTRE EQUILIBRE",
+              "monto": 183000,
+              "tipo": "compra",
+              "categoria": "Equilibre",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        }
+      },
+      "catOrder": [
+        "Cuotas vigentes",
+        "Compras / Tiendas",
+        "Alimentación / Restaurantes",
+        "Transporte",
+        "Bencina / Combustible",
+        "Otros",
+        "Estacionamiento",
+        "Servicios / Cuentas",
+        "Salud / Seguros",
+        "Notas de crédito / Abonos",
+        "Educación / Actividades",
+        "Flores / Regalos"
+      ]
+    },
+    "Febrero 2026": {
+      "key": "Febrero 2026",
+      "periodo": "Febrero 2026",
+      "fechaDesde": "23/02/2026",
+      "fechaHasta": "24/03/2026",
+      "totalFacturado": 3870698,
+      "categories": {
+        "Cuotas vigentes": {
+          "txs": [
+            {
+              "fecha": "05/03/24",
+              "descripcion": "MP *MACONLINE",
+              "monto": 23611,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 23,
+              "cuotaTotal": 36,
+              "subgrupo": "Mac"
+            },
+            {
+              "fecha": "10/03/25",
+              "descripcion": "AUTOCLASS",
+              "monto": 238374,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 11,
+              "cuotaTotal": 48,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "20/05/25",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 266009,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 10,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "07/07/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 203822,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 7,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "07/08/25",
+              "descripcion": "APPLE.COM CL APPLE CHILE",
+              "monto": 79166,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 24,
+              "subgrupo": "Mac"
+            },
+            {
+              "fecha": "02/09/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 276569,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "06/09/25",
+              "descripcion": "AUTOPLANET TIENDA WEB",
+              "monto": 41916,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "16/09/25",
+              "descripcion": "FORUS S.A.",
+              "monto": 11599,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "16/09/25",
+              "descripcion": "MERCADO PAGO 4 TCOM",
+              "monto": 11885,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "16/09/25",
+              "descripcion": "MERCADO PAGO 4 TCOM",
+              "monto": 7900,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "22/09/25",
+              "descripcion": "MP *MERCADO LIBRE",
+              "monto": 11510,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "07/10/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 53155,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 4,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "14/10/25",
+              "descripcion": "MP *SAMSONITE",
+              "monto": 13414,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "19/10/25",
+              "descripcion": "MERCADOPAGO*9PRODUCTOS",
+              "monto": 11253,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "19/10/25",
+              "descripcion": "MERCADOPAGO*9PRODUCTOS",
+              "monto": 1776,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 12,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "09/11/25",
+              "descripcion": "MP *MERCADO LIBRE",
+              "monto": 11519,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 4,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "27/11/25",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 55721,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "29/11/25",
+              "descripcion": "PAYU *ADIDAS",
+              "monto": 13327,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 3,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "04/02/26",
+              "descripcion": "MP *MERCADO LIBRE",
+              "monto": 7960,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "18/02/26",
+              "descripcion": "KAUFMANN LAS PARCELAS",
+              "monto": 66246,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 6,
+              "subgrupo": "Ruedas"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Mac",
+            "Ruedas",
+            "Puerto Varas",
+            "Varios",
+            "NY",
+            "Permisos"
+          ]
+        },
+        "Compras / Tiendas": {
+          "txs": [
+            {
+              "fecha": "26/01/26",
+              "descripcion": "HILTON",
+              "monto": 5200,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "31/01/26",
+              "descripcion": "ECONORENT ECHECK",
+              "monto": 344411,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "31/01/26",
+              "descripcion": "CENCO PARKING PENALOLEN",
+              "monto": 400,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "01/02/26",
+              "descripcion": "EASY PENALOLEN",
+              "monto": 13172,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Casa"
+            },
+            {
+              "fecha": "01/02/26",
+              "descripcion": "MALL PASEO QUILIN",
+              "monto": 300,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "06/02/26",
+              "descripcion": "TUS MASCOTAS",
+              "monto": 40490,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Peluditos"
+            },
+            {
+              "fecha": "07/02/26",
+              "descripcion": "ANTARTICA PLAZA EGANA",
+              "monto": 15400,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "07/02/26",
+              "descripcion": "DOCKERS PLAZA EGANA",
+              "monto": 17496,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "08/02/26",
+              "descripcion": "MINIMARKET ANTONELLA SPA",
+              "monto": 4580,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "10/02/26",
+              "descripcion": "OK PARKING SPA",
+              "monto": 53270,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "10/02/26",
+              "descripcion": "BOETSCH Y TAGLE LTDA",
+              "monto": 102000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "10/02/26",
+              "descripcion": "MERCADOPAGO*DESARROLLO",
+              "monto": 10500,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "11/02/26",
+              "descripcion": "CHOCOLATERIA DOMINIQUE",
+              "monto": 11000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "12/02/26",
+              "descripcion": "CASA MATRIZ",
+              "monto": 55000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "12/02/26",
+              "descripcion": "MERPAGO*MELIMAS",
+              "monto": 12990,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "12/02/26",
+              "descripcion": "TUU*naturaParkElSalto",
+              "monto": 3000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "12/02/26",
+              "descripcion": "SECTOR LOS SALTOS",
+              "monto": 14500,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "13/02/26",
+              "descripcion": "MERCADOPAGO*RUCAKUMILLAL",
+              "monto": 5000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "13/02/26",
+              "descripcion": "MERCADOPAGO*INVERSIONESWI",
+              "monto": 17000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "13/02/26",
+              "descripcion": "MERCADOPAGO*SSAGROSPA",
+              "monto": 6500,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "14/02/26",
+              "descripcion": "NAVE RUENDE ADICIONAL",
+              "monto": 20500,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "14/02/26",
+              "descripcion": "CRUZ EL SUR 2",
+              "monto": 15000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "14/02/26",
+              "descripcion": "COMPLEJO TURISTICO PUN",
+              "monto": 33000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "14/02/26",
+              "descripcion": "TUU*LACTEOS PATAGONIA LTD",
+              "monto": 12000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "15/02/26",
+              "descripcion": "CAJA 1",
+              "monto": 13570,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "15/02/26",
+              "descripcion": "MERCADOPAGO*RECREACION",
+              "monto": 18300,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "16/02/26",
+              "descripcion": "TURISMO LA CASCADA SPA",
+              "monto": 70000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "16/02/26",
+              "descripcion": "MERCADOPAGO*NVOCIMARRON",
+              "monto": 13090,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Vacaciones"
+            },
+            {
+              "fecha": "18/02/26",
+              "descripcion": "PAYU *UBER TRIP",
+              "monto": 14494,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/02/26",
+              "descripcion": "EASY PENALOLEN",
+              "monto": 16680,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Casa"
+            },
+            {
+              "fecha": "21/02/26",
+              "descripcion": "PORTAL MAYOR",
+              "monto": 24000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Peluditos"
+            },
+            {
+              "fecha": "21/02/26",
+              "descripcion": "TISCHLER Y JIMENEZ LIMITA",
+              "monto": 25000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/02/26",
+              "descripcion": "BAR MOVIL 98",
+              "monto": 9600,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "22/02/26",
+              "descripcion": "CENCO PARKING PENALOLEN",
+              "monto": 450,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "22/02/26",
+              "descripcion": "HOMEVAN",
+              "monto": 31980,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Casa"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Varios",
+            "Casa",
+            "Supermercado",
+            "Amorcitos",
+            "Vacaciones",
+            "Peluditos"
+          ]
+        },
+        "Alimentación / Restaurantes": {
+          "txs": [
+            {
+              "fecha": "26/01/26",
+              "descripcion": "MERPAGO*MCDONALDSCHI",
+              "monto": 13859,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "28/01/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16610,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "28/01/26",
+              "descripcion": "MERPAGO*MICOCACOLA",
+              "monto": 34983,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "30/01/26",
+              "descripcion": "PIZZAS DEL 10",
+              "monto": 20490,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "30/01/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 26290,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "31/01/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 47828,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "31/01/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 700,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "31/01/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 58601,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "04/02/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 11550,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "05/02/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 18260,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "06/02/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 26290,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "07/02/26",
+              "descripcion": "TOTTUS PLAZA EGANA",
+              "monto": 26120,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "09/02/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16280,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "10/02/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16280,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "11/02/26",
+              "descripcion": "BARGUAL",
+              "monto": 52965,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "13/02/26",
+              "descripcion": "GASTRONOMIA EVENTOS Y DEC",
+              "monto": 30140,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "13/02/26",
+              "descripcion": "MERCADOPAGO*TROPERA",
+              "monto": 82390,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "13/02/26",
+              "descripcion": "MERCADOPAGO*TROPERA",
+              "monto": 2500,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "13/02/26",
+              "descripcion": "MERCADOPAGO*TROPERA",
+              "monto": 2500,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "15/02/26",
+              "descripcion": "LAS BUENAS BRASAS",
+              "monto": 106500,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "16/02/26",
+              "descripcion": "GASTRONOMICA EL NUEVO CIN",
+              "monto": 82940,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Restaurant"
+            },
+            {
+              "fecha": "18/02/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 15290,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "18/02/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 25362,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "19/02/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16060,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "19/02/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 26862,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "22/02/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 78809,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Almuerzo Diario",
+            "Restaurant",
+            "Supermercado"
+          ]
+        },
+        "Bencina / Combustible": {
+          "txs": [
+            {
+              "fecha": "26/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 9400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "28/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 9400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "28/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 3300,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "31/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 4400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "31/01/26",
+              "descripcion": "COPEC APP",
+              "monto": 11780,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "02/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 34765,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "02/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 4700,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "02/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 2180,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "04/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 14600,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "05/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 6290,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "07/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 8000,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "08/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 12670,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "09/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 20000,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "09/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 2990,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "14/02/26",
+              "descripcion": "UPA] F949 PUERTO VARAS",
+              "monto": 25900,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "17/02/26",
+              "descripcion": "COPEC ZERVO",
+              "monto": 15000,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "17/02/26",
+              "descripcion": "COPEC ZERVO",
+              "monto": 5000,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "18/02/26",
+              "descripcion": "COPEC APP",
+              "monto": 14000,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Compras",
+            "Bencina"
+          ]
+        },
+        "Servicios / Cuentas": {
+          "txs": [
+            {
+              "fecha": "02/02/26",
+              "descripcion": "GTD MANQUEHUE S A",
+              "monto": 38591,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "02/02/26",
+              "descripcion": "PAT - CONFUTURO",
+              "monto": 47899,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "14/02/26",
+              "descripcion": "NETFLIX",
+              "monto": 9990,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "Salud / Seguros": {
+          "txs": [
+            {
+              "fecha": "02/02/26",
+              "descripcion": "SEGUROS UC CHRISTUS",
+              "monto": 112758,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "05/02/26",
+              "descripcion": "ASEGURADORA PORVENI",
+              "monto": 70734,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "06/02/26",
+              "descripcion": "SEG AUTO SANTANDER",
+              "monto": 41675,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "07/02/26",
+              "descripcion": "CRUZ VERDE CV499",
+              "monto": 17631,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Farmacia"
+            },
+            {
+              "fecha": "08/02/26",
+              "descripcion": "CRUZ VERDE CV499",
+              "monto": 12880,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Farmacia"
+            },
+            {
+              "fecha": "11/02/26",
+              "descripcion": "C. VERDE PUERTO VARAS",
+              "monto": 7891,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Farmacia"
+            },
+            {
+              "fecha": "15/02/26",
+              "descripcion": "FARM CRUZ VERDE CV 992",
+              "monto": 4390,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Farmacia"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Seguros",
+            "Farmacia",
+            "Clinica"
+          ]
+        },
+        "Notas de crédito / Abonos": {
+          "txs": [
+            {
+              "fecha": "19/02/26",
+              "descripcion": "NOTA DE CREDITO",
+              "monto": -1190,
+              "tipo": "abono",
+              "categoria": "Notas de crédito / Abonos",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "19/02/26",
+              "descripcion": "NOTA DE CREDITO",
+              "monto": -9990,
+              "tipo": "abono",
+              "categoria": "Notas de crédito / Abonos",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        }
+      },
+      "catOrder": [
+        "Cuotas vigentes",
+        "Compras / Tiendas",
+        "Alimentación / Restaurantes",
+        "Transporte",
+        "Bencina / Combustible",
+        "Otros",
+        "Estacionamiento",
+        "Servicios / Cuentas",
+        "Salud / Seguros",
+        "Notas de crédito / Abonos",
+        "Educación / Actividades"
+      ]
+    },
+    "Abril 2026": {
+      "key": "Abril 2026",
+      "periodo": "Abril 2026",
+      "fechaDesde": "23/02/2026",
+      "fechaHasta": "22/04/2026",
+      "totalFacturado": 3890859,
+      "categories": {
+        "Cuotas vigentes": {
+          "txs": [
+            {
+              "fecha": "05/03/24",
+              "descripcion": "MP   *MACONLINE",
+              "monto": 23611,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 25,
+              "cuotaTotal": 36,
+              "subgrupo": "Mac"
+            },
+            {
+              "fecha": "10/03/25",
+              "descripcion": "AUTOCLASS",
+              "monto": 238374,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 13,
+              "cuotaTotal": 48,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "20/05/25",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 266009,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 12,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "07/07/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 203822,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 9,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "07/08/25",
+              "descripcion": "APPLE.COM CL APPLE CHILE",
+              "monto": 79166,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 8,
+              "cuotaTotal": 24,
+              "subgrupo": "Mac"
+            },
+            {
+              "fecha": "02/09/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 276569,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 7,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "06/09/25",
+              "descripcion": "AUTOPLANET TIENDA WEB",
+              "monto": 41916,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 8,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "07/10/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 53155,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "19/10/25",
+              "descripcion": "MERCADOPAGO*9PRODUCTOS",
+              "monto": 1776,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 7,
+              "cuotaTotal": 12,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "09/11/25",
+              "descripcion": "MP   *MERCADO LIBRE",
+              "monto": 11517,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "27/11/25",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 55721,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 5,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "04/02/26",
+              "descripcion": "MP   *MERCADO LIBRE",
+              "monto": 7960,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 3,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "18/02/26",
+              "descripcion": "KAUFMANN LAS PARCELAS",
+              "monto": 66246,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 6,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "09/03/26",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 96916,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "13/03/26",
+              "descripcion": "METROGAS METROBOLSA.CL",
+              "monto": 33156,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 12,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "16/03/26",
+              "descripcion": "MP   *MERCADO LIBRE",
+              "monto": 6998,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "16/03/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 30596,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 3,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "19/03/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 56445,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 6,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "04/04/26",
+              "descripcion": "MERCADO PAGO 4 TCOM",
+              "monto": 15135,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "06/04/26",
+              "descripcion": "PREMIER PARTS SPA",
+              "monto": 37800,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "09/04/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 43937,
+              "tipo": "compra",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Ruedas",
+            "NY",
+            "Mac",
+            "Varios",
+            "Puerto Varas",
+            "Permisos"
+          ]
+        },
+        "Compras / Tiendas": {
+          "txs": [
+            {
+              "fecha": "27/03/26",
+              "descripcion": "MERCADOPAGO*DESARROLLO",
+              "monto": 10500,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "27/03/26",
+              "descripcion": "JIS PARKING SPA",
+              "monto": 200,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "28/03/26",
+              "descripcion": "PAYU   *UBER TRIP",
+              "monto": 4298,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "28/03/26",
+              "descripcion": "CENCO PARKING PENALOLEN",
+              "monto": 450,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "29/03/26",
+              "descripcion": "IMPTO. DECRETO LEY 3475",
+              "monto": 323,
+              "tipo": "impuesto",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "29/03/26",
+              "descripcion": "IMPTO. DECRETO LEY 3475",
+              "monto": 767,
+              "tipo": "impuesto",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "30/03/26",
+              "descripcion": "MERPAGO*MUNDOMIEL",
+              "monto": 24290,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "05/04/26",
+              "descripcion": "IMPTO. DECRETO LEY 3475",
+              "monto": 269,
+              "tipo": "impuesto",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "09/04/26",
+              "descripcion": "TUS MASCOTAS",
+              "monto": 40920,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Peluditos"
+            },
+            {
+              "fecha": "11/04/26",
+              "descripcion": "MERCADOPAGO*DESARROLLO",
+              "monto": 18380,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "11/04/26",
+              "descripcion": "JIS PARKING SPA",
+              "monto": 600,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "12/04/26",
+              "descripcion": "CENCO PARKING PENALOLEN",
+              "monto": 350,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "13/04/26",
+              "descripcion": "MERPAGO*MELIMAS",
+              "monto": 12990,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "17/04/26",
+              "descripcion": "EASY PENALOLEN",
+              "monto": 8990,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Casa"
+            },
+            {
+              "fecha": "18/04/26",
+              "descripcion": "MERPAGO*AMAUSLTDALFD",
+              "monto": 20850,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "18/04/26",
+              "descripcion": "CENCO PARKING PENALOLEN",
+              "monto": 450,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/04/26",
+              "descripcion": "OKM LUIS THAYER OJEDA",
+              "monto": 14470,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/04/26",
+              "descripcion": "TERRITORIA APOQUINDO",
+              "monto": 2450,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "21/04/26",
+              "descripcion": "TERRITORIA APOQUINDO",
+              "monto": 1050,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Varios",
+            "Peluditos",
+            "Casa",
+            "Supermercado",
+            "Amorcitos",
+            "Vacaciones"
+          ]
+        },
+        "Alimentación / Restaurantes": {
+          "txs": [
+            {
+              "fecha": "24/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 7139,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "25/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 18260,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "26/03/26",
+              "descripcion": "EL POLLO CABALLO",
+              "monto": 19195,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "27/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 12650,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "28/03/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 98574,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "29/03/26",
+              "descripcion": "MIRANDES CAFETERIA",
+              "monto": 3180,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "30/03/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 12540,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "01/04/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 32852,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "02/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16940,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "04/04/26",
+              "descripcion": "MINIMARKET ANTONELLA SPA",
+              "monto": 9120,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "04/04/26",
+              "descripcion": "MINIMARKET ANTONELLA SPA",
+              "monto": 3340,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "05/04/26",
+              "descripcion": "MIRANDES CAFETERIA",
+              "monto": 5850,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "06/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 20009,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "07/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 13189,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "08/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16500,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "09/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 10439,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "10/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16808,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "11/04/26",
+              "descripcion": "HIP LIDER QUILIN",
+              "monto": 35670,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "12/04/26",
+              "descripcion": "SUMUP * DULCE PAN",
+              "monto": 3800,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "12/04/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 57948,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "13/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 14839,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "14/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 16165,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "15/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 9350,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "16/04/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 28215,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "17/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 19899,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "17/04/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 50840,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "18/04/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 64744,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "20/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 13959,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "21/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 7139,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Almuerzo Diario",
+            "Supermercado",
+            "Restaurant"
+          ]
+        },
+        "Bencina / Combustible": {
+          "txs": [
+            {
+              "fecha": "24/03/26",
+              "descripcion": "COPEC APP",
+              "monto": 11300,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "30/03/26",
+              "descripcion": "SHELL 1CLICK MI COPILO T1",
+              "monto": 64548,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "30/03/26",
+              "descripcion": "COPEC APP",
+              "monto": 11300,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "02/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 9990,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "04/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 9200,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "07/04/26",
+              "descripcion": "MERPAGO*APPSHELL",
+              "monto": 10800,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "07/04/26",
+              "descripcion": "MERPAGO*APPSHELL",
+              "monto": 79520,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "10/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 9200,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "14/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 14600,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "14/04/26",
+              "descripcion": "MERPAGO*APPSHELL",
+              "monto": 73735,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "16/04/26",
+              "descripcion": "COPEMSA SUR",
+              "monto": 900,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "16/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 9200,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "18/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 9990,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "19/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 4400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "19/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 4400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "21/04/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 77701,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Compras",
+            "Bencina"
+          ]
+        },
+        "Servicios / Cuentas": {
+          "txs": [
+            {
+              "fecha": "30/03/26",
+              "descripcion": "GTD MANQUEHUE S A",
+              "monto": 38591,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "30/03/26",
+              "descripcion": "WOM WEBPAY",
+              "monto": 40776,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "16/04/26",
+              "descripcion": "MERCADOPAGO*NOTARIASOLAR",
+              "monto": 4000,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "Salud / Seguros": {
+          "txs": [
+            {
+              "fecha": "27/03/26",
+              "descripcion": "AHUM L412 VESPUCIO 3100",
+              "monto": 4780,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Farmacia"
+            },
+            {
+              "fecha": "01/04/26",
+              "descripcion": "PAT - CONFUTURO",
+              "monto": 48066,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "02/04/26",
+              "descripcion": "SEGUROS UC CHRISTUS",
+              "monto": 113150,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "07/04/26",
+              "descripcion": "SEG AUTO SANTANDER",
+              "monto": 41834,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "11/04/26",
+              "descripcion": "AHUM L412 VESPUCIO 3100",
+              "monto": 5828,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Farmacia"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Seguros",
+            "Farmacia",
+            "Clinica"
+          ]
+        },
+        "Notas de crédito / Abonos": {
+          "txs": [
+            {
+              "fecha": "31/01/26",
+              "descripcion": "NOTA DE CREDITO",
+              "monto": -6425,
+              "tipo": "abono",
+              "categoria": "Notas de crédito / Abonos",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "Equilibre": {
+          "txs": [
+            {
+              "fecha": "29/03/26",
+              "descripcion": "CENTRO ECUESTRE EQUILIBRE",
+              "monto": 93000,
+              "tipo": "compra",
+              "categoria": "Equilibre",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "15/04/26",
+              "descripcion": "CENTRO ECUESTRE EQUILIBRE",
+              "monto": 46500,
+              "tipo": "compra",
+              "categoria": "Equilibre",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "15/04/26",
+              "descripcion": "CENTRO ECUESTRE EQUILIBRE",
+              "monto": 183000,
+              "tipo": "compra",
+              "categoria": "Equilibre",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "Ruedas": {
+          "txs": [
+            {
+              "fecha": "27/03/26",
+              "descripcion": "AE SERVICE",
+              "monto": 257040,
+              "tipo": "compra",
+              "categoria": "Ruedas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "16/04/26",
+              "descripcion": "AE SERVICE SERV. TEC.",
+              "monto": 171360,
+              "tipo": "compra",
+              "categoria": "Ruedas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        }
+      },
+      "catOrder": [
+        "Cuotas vigentes",
+        "Compras / Tiendas",
+        "Alimentación / Restaurantes",
+        "Bencina / Combustible",
+        "Servicios / Cuentas",
+        "Salud / Seguros",
+        "Notas de crédito / Abonos",
+        "Ruedas",
+        "Equilibre"
+      ]
+    },
+    "Mayo 2026": {
+      "key": "Mayo 2026",
+      "periodo": "Mayo 2026",
+      "fechaDesde": "23/04/2026",
+      "fechaHasta": "25/05/2026",
+      "totalFacturado": 4130725,
+      "categories": {
+        "Cuotas vigentes": {
+          "txs": [
+            {
+              "fecha": "05/03/24",
+              "descripcion": "MP *MACONLINE",
+              "monto": 23611,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 26,
+              "cuotaTotal": 36,
+              "subgrupo": "Mac"
+            },
+            {
+              "fecha": "10/03/25",
+              "descripcion": "AUTOCLASS",
+              "monto": 238374,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 14,
+              "cuotaTotal": 48,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "07/07/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 203822,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 10,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "07/08/25",
+              "descripcion": "APPLE.COM CL APPLE CHILE",
+              "monto": 79166,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 9,
+              "cuotaTotal": 24,
+              "subgrupo": "Mac"
+            },
+            {
+              "fecha": "02/09/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 276569,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 8,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "06/09/25",
+              "descripcion": "AUTOPLANET TIENDA WEB",
+              "monto": 41916,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 9,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "07/10/25",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 53155,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 7,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "19/10/25",
+              "descripcion": "MERCADOPAGO*9PRODUCTOS",
+              "monto": 1776,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 8,
+              "cuotaTotal": 12,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "27/11/25",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 55721,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 6,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "18/02/26",
+              "descripcion": "KAUFMANN LAS PARCELAS",
+              "monto": 66246,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 4,
+              "cuotaTotal": 6,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "09/03/26",
+              "descripcion": "TRASP A CUOTAS DEUDA INTERNA",
+              "monto": 96916,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 12,
+              "subgrupo": "NY"
+            },
+            {
+              "fecha": "13/03/26",
+              "descripcion": "METROGAS METROBOLSA.CL",
+              "monto": 33156,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 12,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "16/03/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 30597,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 3,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "16/03/26",
+              "descripcion": "MP *MERCADO LIBRE",
+              "monto": 6998,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "19/03/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 56445,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 3,
+              "cuotaTotal": 6,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "29/03/26",
+              "descripcion": "MUNICIPALIDAD DE PENALOLE",
+              "monto": 96810,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Permisos"
+            },
+            {
+              "fecha": "29/03/26",
+              "descripcion": "MUNICIPALIDAD DE PENALOLE",
+              "monto": 40809,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Permisos"
+            },
+            {
+              "fecha": "04/04/26",
+              "descripcion": "MERCADO PAGO 4 TCOM",
+              "monto": 15135,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 6,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "05/04/26",
+              "descripcion": "FEDERACION ECUESTRE",
+              "monto": 34000,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Peluditos"
+            },
+            {
+              "fecha": "06/04/26",
+              "descripcion": "PREMIER PARTS SPA",
+              "monto": 37800,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 3,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "09/04/26",
+              "descripcion": "KAUFMANN EST. CENTRAL P1",
+              "monto": 43937,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 2,
+              "cuotaTotal": 12,
+              "subgrupo": "Ruedas"
+            },
+            {
+              "fecha": "20/05/26",
+              "descripcion": "MERCADOPAGO*MERCADOLIBRE",
+              "monto": 6762,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "20/05/26",
+              "descripcion": "CEDILO",
+              "monto": 32293,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Peluditos"
+            },
+            {
+              "fecha": "20/05/26",
+              "descripcion": "S.VETERINARIA FEMAVIC",
+              "monto": 106000,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Peluditos"
+            },
+            {
+              "fecha": "22/05/26",
+              "descripcion": "S.VETERINARIA FEMAVIC",
+              "monto": 46167,
+              "tipo": "cuota",
+              "categoria": "Cuotas vigentes",
+              "cuotaActual": 1,
+              "cuotaTotal": 3,
+              "subgrupo": "Peluditos"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Mac",
+            "Ruedas",
+            "NY",
+            "Varios",
+            "Permisos",
+            "Puerto Varas",
+            "Peluditos"
+          ]
+        },
+        "Compras / Tiendas": {
+          "txs": [
+            {
+              "fecha": "22/04/26",
+              "descripcion": "SUMUP * TABAQUERIA RIQ",
+              "monto": 1000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "25/04/26",
+              "descripcion": "KIOSCLUB PENALOLEN",
+              "monto": 7970,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "26/04/26",
+              "descripcion": "MP*MICOCACOLA",
+              "monto": 28160,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Casa"
+            },
+            {
+              "fecha": "01/05/26",
+              "descripcion": "CINEPOLIS WEB",
+              "monto": 40400,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "01/05/26",
+              "descripcion": "GAS LAS NACIONES",
+              "monto": 34300,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Casa"
+            },
+            {
+              "fecha": "02/05/26",
+              "descripcion": "MERCADOPAGO*DESARROLLO",
+              "monto": 11050,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "02/05/26",
+              "descripcion": "CINEPOLIS PLAZA EGANA",
+              "monto": 16600,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "06/05/26",
+              "descripcion": "CENCOSUD FIDELIDAD",
+              "monto": 30000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Casa"
+            },
+            {
+              "fecha": "09/05/26",
+              "descripcion": "FALABELLA VINA 2",
+              "monto": 5990,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "09/05/26",
+              "descripcion": "PANDA ORIENTAL LTDA",
+              "monto": 10790,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Amorcitos"
+            },
+            {
+              "fecha": "10/05/26",
+              "descripcion": "EASY PENALOLEN",
+              "monto": 37440,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Casa"
+            },
+            {
+              "fecha": "10/05/26",
+              "descripcion": "MALL PASEO QUILIN",
+              "monto": 300,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "10/05/26",
+              "descripcion": "BAR MOVIL 98",
+              "monto": 12400,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "13/05/26",
+              "descripcion": "MERPAGO*MELIMAS",
+              "monto": 12990,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "16/05/26",
+              "descripcion": "HC QUILIN",
+              "monto": 46497,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Casa"
+            },
+            {
+              "fecha": "16/05/26",
+              "descripcion": "CLUB ANIMAL SPA",
+              "monto": 65000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Peluditos"
+            },
+            {
+              "fecha": "17/05/26",
+              "descripcion": "MALL PASEO QUILIN",
+              "monto": 300,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "17/05/26",
+              "descripcion": "AP QUILIN",
+              "monto": 4500,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "23/05/26",
+              "descripcion": "60294 PINTO&CAND",
+              "monto": 9000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "24/05/26",
+              "descripcion": "MERCADOPAGO*DIGITALCHOICE",
+              "monto": 11890,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            },
+            {
+              "fecha": "24/05/26",
+              "descripcion": "60294 PINTO&CAND",
+              "monto": 9000,
+              "tipo": "compra",
+              "categoria": "Compras / Tiendas",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Varios"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Amorcitos",
+            "Varios",
+            "Casa",
+            "Supermercado",
+            "Vacaciones",
+            "Peluditos"
+          ]
+        },
+        "Alimentación / Restaurantes": {
+          "txs": [
+            {
+              "fecha": "22/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 15609,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "24/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 17699,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "25/04/26",
+              "descripcion": "MP*COUSINOMACUL",
+              "monto": 37540,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "25/04/26",
+              "descripcion": "TOTTUS QUILIN",
+              "monto": 28202,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "25/04/26",
+              "descripcion": "PATRICK S BAKERY",
+              "monto": 21970,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "26/04/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 68401,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "27/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 20218,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "28/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 12100,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "29/04/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 20009,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "02/05/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 49714,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "02/05/26",
+              "descripcion": "HIP LIDER QUILIN",
+              "monto": 17113,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "04/05/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 7139,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "05/05/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 20218,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "06/05/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 8998,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "07/05/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 18920,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "08/05/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 15048,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "09/05/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 46445,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "09/05/26",
+              "descripcion": "UNIMARC CONSISTORIAL",
+              "monto": 54149,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "10/05/26",
+              "descripcion": "SANTA ISABEL QUILIN N518",
+              "monto": 13020,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "11/05/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 7139,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "12/05/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 13849,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "13/05/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 17545,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "14/05/26",
+              "descripcion": "LA MARTINA PASTA SPA",
+              "monto": 26840,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "16/05/26",
+              "descripcion": "MIRANDES CAFETERIA",
+              "monto": 13600,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "18/05/26",
+              "descripcion": "RESTAURANT LA PLAYA",
+              "monto": 20009,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "19/05/26",
+              "descripcion": "EL POLLO CABALLO",
+              "monto": 24310,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "20/05/26",
+              "descripcion": "LA PIEDRA DE RENCA",
+              "monto": 45650,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Almuerzo Diario"
+            },
+            {
+              "fecha": "22/05/26",
+              "descripcion": "MINIMARKET ANTONELLA SPA",
+              "monto": 10228,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "22/05/26",
+              "descripcion": "JUMBO PENALOLEN",
+              "monto": 106265,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "22/05/26",
+              "descripcion": "CAFERTERIA PANADERIA Y PA",
+              "monto": 9030,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "23/05/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 22698,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "23/05/26",
+              "descripcion": "JUMBO ONECLICK",
+              "monto": 1199,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "24/05/26",
+              "descripcion": "MIRANDES CAFETERIA",
+              "monto": 9060,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            },
+            {
+              "fecha": "24/05/26",
+              "descripcion": "TOTTUS QUILIN",
+              "monto": 5057,
+              "tipo": "compra",
+              "categoria": "Alimentación / Restaurantes",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Supermercado"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Almuerzo Diario",
+            "Supermercado",
+            "Restaurant"
+          ]
+        },
+        "Bencina / Combustible": {
+          "txs": [
+            {
+              "fecha": "24/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 16380,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "26/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 9000,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "26/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 10190,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "27/04/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 74400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "29/04/26",
+              "descripcion": "COPEC APP",
+              "monto": 12490,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "30/04/26",
+              "descripcion": "PUNTO COPEC GRAL PRIETO",
+              "monto": 4700,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "03/05/26",
+              "descripcion": "COPEC APP",
+              "monto": 9000,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "05/05/26",
+              "descripcion": "COPEC APP",
+              "monto": 9400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "06/05/26",
+              "descripcion": "COPEC APP",
+              "monto": 25000,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "07/05/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 77848,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "07/05/26",
+              "descripcion": "COPEC APP",
+              "monto": 8690,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "11/05/26",
+              "descripcion": "COPEC APP",
+              "monto": 9400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "11/05/26",
+              "descripcion": "COPEC APP",
+              "monto": 71001,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "13/05/26",
+              "descripcion": "GENERAL VELASQUEZ KM5F286",
+              "monto": 74444,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "13/05/26",
+              "descripcion": "COPEC APP",
+              "monto": 15390,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "15/05/26",
+              "descripcion": "SHELL VESPUCIO 1828 F115",
+              "monto": 9400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Bencina"
+            },
+            {
+              "fecha": "19/05/26",
+              "descripcion": "COPEC APP",
+              "monto": 9400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "21/05/26",
+              "descripcion": "COPEC APP",
+              "monto": 13390,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            },
+            {
+              "fecha": "24/05/26",
+              "descripcion": "COPEC APP",
+              "monto": 9400,
+              "tipo": "compra",
+              "categoria": "Bencina / Combustible",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Compras"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Compras",
+            "Bencina"
+          ]
+        },
+        "Servicios / Cuentas": {
+          "txs": [
+            {
+              "fecha": "24/04/26",
+              "descripcion": "WOM WEBPAY",
+              "monto": 40776,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "24/04/26",
+              "descripcion": "GTD MANQUEHUE S A",
+              "monto": 38591,
+              "tipo": "compra",
+              "categoria": "Servicios / Cuentas",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        },
+        "Salud / Seguros": {
+          "txs": [
+            {
+              "fecha": "02/05/26",
+              "descripcion": "CRUZ VERDE CV499",
+              "monto": 38383,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Farmacia"
+            },
+            {
+              "fecha": "04/05/26",
+              "descripcion": "PAT - CONFUTURO",
+              "monto": 48418,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "04/05/26",
+              "descripcion": "ASEGURADORA PORVENIR",
+              "monto": 82426,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "05/05/26",
+              "descripcion": "SEGUROS UC CHRISTUS",
+              "monto": 113979,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "07/05/26",
+              "descripcion": "SEG AUTO SANTANDER",
+              "monto": 42210,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            },
+            {
+              "fecha": "15/05/26",
+              "descripcion": "ASEGURADORA PORVENI",
+              "monto": 82770,
+              "tipo": "compra",
+              "categoria": "Salud / Seguros",
+              "cuotaActual": null,
+              "cuotaTotal": null,
+              "subgrupo": "Seguros"
+            }
+          ],
+          "subgroups": {},
+          "sgNames": [
+            "Farmacia",
+            "Seguros",
+            "Clinica"
+          ]
+        },
+        "Equilibre": {
+          "txs": [
+            {
+              "fecha": "12/05/26",
+              "descripcion": "CENTRO ECUESTRE EQUILIBRE",
+              "monto": 183000,
+              "tipo": "compra",
+              "categoria": "Educación / Actividades",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            },
+            {
+              "fecha": "12/05/26",
+              "descripcion": "CENTRO ECUESTRE EQUILIBRE",
+              "monto": 46500,
+              "tipo": "compra",
+              "categoria": "Educación / Actividades",
+              "cuotaActual": null,
+              "cuotaTotal": null
+            }
+          ],
+          "subgroups": {}
+        }
+      },
+      "catOrder": [
+        "Cuotas vigentes",
+        "Compras / Tiendas",
+        "Alimentación / Restaurantes",
+        "Bencina / Combustible",
+        "Servicios / Cuentas",
+        "Salud / Seguros",
+        "Estacionamiento",
+        "Equilibre"
+      ]
+    }
+  },
+  "activeMonth": "Mayo 2026",
+  "monthOrder": [
+    "Enero 2026",
+    "Febrero 2026",
+    "Marzo 2026",
+    "Abril 2026",
+    "Mayo 2026"
+  ]
+}
